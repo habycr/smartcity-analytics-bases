@@ -122,7 +122,7 @@ La relacion entre medianas fue 208 a 1 en este experimento.
 ## Integracion pendiente
 
 Edward debe completar modelo, validadores, CRUD y carga de fuentes.
-Debe respetar docs/contrato_mongodb.md o coordinar sus cambios.
+Debe respetar docs/contrato_mongo.md o coordinar sus cambios.
 
 Con la carga final corresponde volver a ejecutar las consultas,
 revisar calidad de datos y evaluar planes con distribuciones reales.

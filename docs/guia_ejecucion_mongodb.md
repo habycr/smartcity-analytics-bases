@@ -165,6 +165,6 @@ Get-Content "mongo/pruebas/evidencias/rendimiento_500k.txt"
 - Los tiempos de rendimiento pueden variar entre computadoras.
 - Los scripts fijan internamente sus bases mediante getSiblingDB.
   Cambiar solo el nombre de la base en la URI no cambia ese destino.
-- Mantener los campos y tipos de docs/contrato_mongodb.md.
+- Mantener los campos y tipos de docs/contrato_mongo.md.
 - Conservar evidencia de cada equipo por separado si se desea comparar:
   los comandos de redireccion sobrescriben el archivo de salida.
