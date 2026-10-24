@@ -1,0 +1,72 @@
+
+RECORRIDO COMPLETO
+{
+  resultados: 2,
+  documentosExaminados: 8,
+  clavesExaminadas: 0,
+  tiempoMilisegundos: 0
+}
+Plan de ejecucion:
+{
+  isCached: false,
+  stage: 'SORT',
+  sortPattern: {
+    fecha: 1,
+    _id: 1
+  },
+  memLimit: 104857600,
+  type: 'simple',
+  inputStage: {
+    stage: 'COLLSCAN',
+    filter: {
+      sensor_id: {
+        '$eq': 'S001'
+      }
+    },
+    direction: 'forward'
+  }
+}
+
+CON INDICE
+{
+  resultados: 2,
+  documentosExaminados: 2,
+  clavesExaminadas: 2,
+  tiempoMilisegundos: 0
+}
+Plan de ejecucion:
+{
+  isCached: false,
+  stage: 'FETCH',
+  inputStage: {
+    stage: 'IXSCAN',
+    keyPattern: {
+      sensor_id: 1,
+      fecha: 1,
+      _id: 1
+    },
+    indexName: 'idx_lecturas_sensor_fecha',
+    isMultiKey: false,
+    multiKeyPaths: {
+      sensor_id: [],
+      fecha: [],
+      _id: []
+    },
+    isUnique: false,
+    isSparse: false,
+    isPartial: false,
+    indexVersion: 2,
+    direction: 'forward',
+    indexBounds: {
+      sensor_id: [
+        '["S001", "S001"]'
+      ],
+      fecha: [
+        '[MinKey, MaxKey]'
+      ],
+      _id: [
+        '[MinKey, MaxKey]'
+      ]
+    }
+  }
+}
