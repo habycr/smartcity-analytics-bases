@@ -1,0 +1,35 @@
+# Credenciales y configuracion local
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs y temporales
+*.log
+tmp/
+temp/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Datos masivos y respaldos locales
+/datos/raw/
+/datos/generados/
+/mongo/datos/
+/mongo/backups/
+/mongo/db/
