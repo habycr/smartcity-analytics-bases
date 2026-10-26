@@ -1,0 +1,104 @@
+
+\documentclass[tikz,border=13mm]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usetikzlibrary{shapes.geometric,calc,positioning,babel}
+% Notación de Chen: doble línea = participación total; línea simple = parcial.
+\tikzset{
+ entidad/.style={rectangle,draw,very thick,fill=blue!7,minimum width=3.2cm,minimum height=.85cm,align=center,font=\bfseries\small},
+ relacion/.style={diamond,aspect=2,draw,thick,fill=orange!12,inner sep=1pt,minimum width=2.5cm,minimum height=1.1cm,align=center,font=\scriptsize},
+ atributo/.style={ellipse,draw,fill=white,minimum height=.65cm,inner sep=3pt,align=center,font=\scriptsize},
+ cardinal/.style={font=\bfseries\scriptsize,fill=white,inner sep=1.5pt},
+ parcial/.style={thin},
+ total/.style={thin,double,double distance=1.6pt}
+}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+% Ocho entidades
+\node[entidad] (sensor) at (0,0) {SENSOR};
+\node[entidad] (ubic) at (-10,5.8) {UBICACIÓN};
+\node[entidad] (categ) at (0,13.0) {CATEGORÍA DE SENSOR};
+\node[entidad] (tipo) at (0,7.4) {TIPO DE SENSOR};
+\node[entidad] (org) at (10,5.8) {ORGANISMO RESPONSABLE};
+\node[entidad] (med) at (0,-11.0) {MEDICIÓN};
+\node[entidad] (var) at (-10,-11) {VARIABLE DE MEDICIÓN};
+\node[entidad] (usr) at (12,-10.5) {USUARIO DEL SISTEMA};
+% Seis relaciones
+\node[relacion] (rubic) at (-5.3,3.1) {SE\_INSTALA\_EN};
+\node[relacion] (rcat) at (0,10.2) {CLASIFICA};
+\node[relacion] (rtipo) at (0,3.5) {ES\_DE\_TIPO};
+\node[relacion] (rorg) at (5.3,3.1) {ADMINISTRA};
+\node[relacion] (rmed) at (0,-6.6) {GENERA};
+\node[relacion] (rvar) at (-5.2,-11.0) {CORRESPONDE\_A};
+% Conectores: 1 a N; doble línea al lado de participación total
+\draw[parcial] (ubic.south east) -- (rubic.north west) node[pos=.22,cardinal,above right] {1};
+\draw[total] (rubic.south east) -- (sensor.north west) node[pos=.77,cardinal,above left] {N};
+\draw[parcial] (categ.south) -- (rcat.north) node[pos=.25,cardinal,right] {1};
+\draw[total] (rcat.south) -- (tipo.north) node[pos=.78,cardinal,right] {N};
+\draw[parcial] (tipo.south) -- (rtipo.north) node[pos=.22,cardinal,right] {1};
+\draw[total] (rtipo.south) -- (sensor.north) node[pos=.78,cardinal,right] {N};
+\draw[parcial] (org.south west) -- (rorg.north east) node[pos=.22,cardinal,above left] {1};
+\draw[total] (rorg.south west) -- (sensor.north east) node[pos=.77,cardinal,above right] {N};
+\draw[parcial] (sensor.south) -- (rmed.north) node[pos=.25,cardinal,right] {1};
+\draw[total] (rmed.south) -- (med.north) node[pos=.77,cardinal,right] {N};
+\draw[parcial] (var.east) -- (rvar.west) node[pos=.30,cardinal,above] {1};
+\draw[total] (rvar.east) -- (med.west) node[pos=.76,cardinal,above] {N};
+% UBICACIÓN: coordenadas compuesto
+\node[atributo] (uid) at (-14.1,8.4) {\underline{id\_ubicacion}};
+\node[atributo] (uzona) at (-10.7,8.7) {nombre\_zona};
+\node[atributo] (udist) at (-7.2,8.6) {distrito};
+\node[atributo] (ucoor) at (-14.8,5.5) {coordenadas};
+\node[atributo] (ulat) at (-17.4,6.7) {latitud};
+\node[atributo] (ulon) at (-17.4,4.5) {longitud};
+\foreach \a in {uid,uzona,udist,ucoor} \draw (ubic) -- (\a);
+\draw (ucoor) -- (ulat); \draw (ucoor) -- (ulon);
+% CATEGORÍA
+\node[atributo] (cid) at (-3.0,15.5) {\underline{id\_categoria}};
+\node[atributo] (cnom) at (3.0,15.5) {nombre\_categoria};
+\draw (categ) -- (cid); \draw (categ) -- (cnom);
+% TIPO: tipo_sensor conservado como atributo de SENSOR; el catálogo define su categoría.
+\node[atributo] (tid) at (-4.0,7.2) {\underline{tipo\_sensor}};
+\draw (tipo.west) -- (tid.east);
+% ORGANISMO
+\node[atributo] (oid) at (7.6,8.8) {\underline{id\_organismo}};
+\node[atributo] (onom) at (11.7,8.9) {nombre};
+\node[atributo] (ores) at (15.3,7.5) {responsable};
+\foreach \a in {oid,onom,ores} \draw (org) -- (\a);
+% SENSOR
+\node[atributo] (sid) at (-3.7,-1.2) {\underline{id\_sensor}};
+\node[atributo] (snom) at (-3.7,-3.0) {nombre};
+\node[atributo] (stipo) at (3.7,-1.2) {tipo\_sensor};
+\node[atributo] (sfecha) at (4.4,-3.0) {fecha\_instalacion};
+\node[atributo] (sestado) at (4.0,-4.7) {estado};
+\foreach \a in {sid,snom,stipo,sfecha,sestado} \draw (sensor) -- (\a);
+% VARIABLE DE MEDICIÓN
+\node[atributo] (vid) at (-13.2,-13.3) {\underline{id\_variable}};
+\node[atributo] (vnom) at (-10,-14.2) {nombre\_variable};
+\node[atributo] (vuni) at (-6.9,-13.3) {unidad\_canónica};
+\foreach \a in {vid,vnom,vuni} \draw (var) -- (\a);
+% MEDICIÓN: ya no repite variable ni unidad; ambos se obtienen por la relación
+\node[atributo] (mid) at (-2.7,-13.2) {\underline{id\_medicion}};
+\node[atributo] (mfecha) at (0.0,-14.8) {fecha\_utc};
+\node[atributo] (mval) at (2.9,-13.2) {valor};
+\node[atributo] (mfuente) at (4.6,-11.6) {fuente};
+\foreach \a in {mid,mfecha,mval,mfuente} \draw (med) -- (\a);
+% USUARIO independiente; nombre compuesto acordado por el equipo
+\node[atributo] (usid) at (8.2,-11.7) {\underline{id\_usuario}};
+\node[atributo] (usnom) at (12,-12.5) {nombre};
+\node[atributo] (usemail) at (16.3,-11.7) {correo};
+\foreach \a in {usid,usnom,usemail} \draw (usr) -- (\a);
+\node[atributo] (usn) at (9.5,-15.0) {nombre};
+\node[atributo] (usap1) at (12.5,-15.0) {apellido1};
+\node[atributo] (usap2) at (15.4,-15.0) {apellido2};
+\foreach \a in {usn,usap1,usap2} \draw (usnom) -- (\a);
+% Notas
+\node[draw=black!55,rounded corners,align=left,font=\footnotesize,text width=12cm,inner sep=7pt,anchor=north west] at (-17.4,-17.0) {
+\textbf{Notación de Chen:} rectángulo = entidad; rombo = relación; óvalo = atributo; subrayado = identificador.\\
+\textbf{Participación:} línea doble = total; simple = parcial. \textbf{Cardinalidad:} 1:N.\\
+\textbf{Reglas acordadas:} cada tipo pertenece a una categoría; cada variable tiene una unidad canónica; USUARIO es independiente.\\
+\textbf{Modelo relacional:} SENSOR conserva tipo\_sensor como FK al catálogo TIPO\_SENSOR (la relación conceptual no se implementa con una tabla adicional).
+};
+\end{tikzpicture}
+\end{document}

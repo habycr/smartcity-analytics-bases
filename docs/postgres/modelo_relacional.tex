@@ -1,0 +1,43 @@
+\documentclass[tikz,border=12mm]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usetikzlibrary{positioning,calc,babel}
+\tikzset{
+  tabla/.style={draw=blue!65!black,very thick,rounded corners=2pt,fill=blue!3,inner sep=0pt},
+  conexion/.style={draw=black!70,semithick},
+  cardinal/.style={font=\bfseries\scriptsize,fill=white,inner sep=1.2pt},
+}
+\newcommand{\tablarel}[2]{%
+ \begin{tabular}{@{}l@{}}\colorbox{blue!18}{\parbox{4.25cm}{\centering\bfseries\small #1}}\\[-1pt]
+ \begin{minipage}{4.25cm}\vspace{2pt}\ttfamily\scriptsize #2\vspace{3pt}\end{minipage}\end{tabular}}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\node[tabla] (cat) at (-12,5.3) {\tablarel{CATEGORIA\\SENSOR}{\underline{id\_categoria} \quad PK\\ nombre\_categoria}};
+\node[tabla] (tipo) at (-5.8,5.3) {\tablarel{TIPO\_SENSOR}{\underline{tipo\_sensor} \quad PK\\ id\_categoria \quad FK}};
+\node[tabla] (ubic) at (0.8,5.3) {\tablarel{UBICACION}{\underline{id\_ubicacion} \quad PK\\ nombre\_zona\\ distrito\\ latitud\\ longitud}};
+\node[tabla] (org) at (8.4,5.3) {\tablarel{ORGANISMO\\RESPONSABLE}{\underline{id\_organismo} \quad PK\\ nombre\\ responsable}};
+\node[tabla] (sen) at (0,-1.7) {\tablarel{SENSOR}{\underline{id\_sensor} \quad PK\\ nombre\\ tipo\_sensor \quad FK\\ fecha\_instalacion\\ estado\\ id\_ubicacion \quad FK\\ id\_organismo \quad FK}};
+\node[tabla] (var) at (-7.6,-9.8) {\tablarel{VARIABLE\\MEDICION}{\underline{id\_variable} \quad PK\\ nombre\_variable\\ unidad\_canonica}};
+\node[tabla] (med) at (0,-9.8) {\tablarel{MEDICION}{\underline{id\_medicion} \quad PK\\ id\_sensor \quad FK\\ id\_variable \quad FK\\ fecha\_utc\\ valor\\ fuente}};
+\node[tabla] (usr) at (8.4,-9.8) {\tablarel{USUARIO}{\underline{id\_usuario} \quad PK\\ nombre\\ apellido1\\ apellido2\\ correo}};
+% Relaciones logicas: extremos etiquetados con cardinalidad.
+\draw[conexion] (cat.east) -- (tipo.west)
+ node[pos=.10,cardinal,above] {1} node[pos=.88,cardinal,above] {N};
+\draw[conexion] (tipo.south) -- ++(0,-2.4) -| ($(sen.north)+(-1.25,0)$)
+ node[pos=.04,cardinal,left] {1};
+\node[cardinal] at ($(sen.north)+(-1.55,.27)$) {N};
+\draw[conexion] (ubic.south) -- ($(sen.north)+(.25,0)$)
+ node[pos=.13,cardinal,right] {1} node[pos=.89,cardinal,right] {N};
+\draw[conexion] (org.south) -- ++(0,-3.0) -| (sen.east)
+ node[pos=.08,cardinal,right] {1};
+\node[cardinal] at ($(sen.east)+(.35,.16)$) {N};
+\draw[conexion] (sen.south) -- (med.north)
+ node[pos=.13,cardinal,right] {1} node[pos=.88,cardinal,right] {N};
+\draw[conexion] (var.east) -- (med.west)
+ node[pos=.12,cardinal,above] {1} node[pos=.88,cardinal,above] {N};
+\node[font=\footnotesize,align=center] at (-1.1,-14.05) {PK = clave primaria \quad FK = clave foránea \quad 1:N = uno a muchos\\
+Las claves foráneas de las tablas del lado N referencian las claves primarias del lado 1.};
+\end{tikzpicture}
+\end{document}
