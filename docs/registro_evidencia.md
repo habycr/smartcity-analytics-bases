@@ -70,3 +70,21 @@ docs/mongodb_consultas_rendimiento.md.
 - Verificar la recarga del ETL con los archivos originales para acreditar
   su control de duplicados; repetir el generador no prueba el ETL.
 - Definir la política de calidad para valores negativos y calificadores EPA.
+
+## Recarga del CSV de demostración
+
+Se ejecutó mongo/carga.py dos veces con datos/mediciones_demo.csv
+y datos/catalogo_demo.csv en smartcity_prueba_carga.
+
+- Primera ejecución: 3 inserciones, 0 documentos existentes.
+- Segunda ejecución: 0 inserciones, 3 documentos existentes.
+- Total final: 3 lecturas sintéticas, sin filas inválidas ni sensores
+  ausentes del catálogo.
+
+Evidencias:
+- mongo/pruebas/evidencias/integracion/recarga_demo_1.json
+- mongo/pruebas/evidencias/integracion/recarga_demo_2.json
+
+Esta prueba acredita el control de duplicados del CSV normalizado
+de demostración. La recarga completa de los ZIP originales EPA y
+la ejecución de la integración en Windows siguen pendientes.
