@@ -1,5 +1,5 @@
 // Q06: promedio por zona, variable y unidad.
-const base = db.getSiblingDB("smartcity");
+const base = db;
 
 const resultados = base.lecturas.aggregate([
   {

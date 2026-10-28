@@ -1,0 +1,467 @@
+Evolucion diaria de pm25 por zona (UTC):
+[
+  {
+    promedio: Decimal128('2.277777777777777777777777777777778'),
+    cantidad: 18,
+    dia: '2025-01-01',
+    zona_id: 'EPA-01-003-0010',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('1.794444444444444444444444444444444'),
+    cantidad: 18,
+    dia: '2025-01-01',
+    zona_id: 'EPA-01-027-0001',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('2.361111111111111111111111111111111'),
+    cantidad: 18,
+    dia: '2025-01-01',
+    zona_id: 'EPA-01-049-1003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('2.883333333333333333333333333333333'),
+    cantidad: 18,
+    dia: '2025-01-01',
+    zona_id: 'EPA-01-055-0010',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('3.416666666666666666666666666666667'),
+    cantidad: 18,
+    dia: '2025-01-01',
+    zona_id: 'EPA-01-073-0023',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('2.700000'),
+    cantidad: 18,
+    dia: '2025-01-01',
+    zona_id: 'EPA-01-073-1005',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('2.655555555555555555555555555555556'),
+    cantidad: 18,
+    dia: '2025-01-01',
+    zona_id: 'EPA-01-073-1010',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('2.694444444444444444444444444444444'),
+    cantidad: 18,
+    dia: '2025-01-01',
+    zona_id: 'EPA-01-073-2003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('4.911111111111111111111111111111111'),
+    cantidad: 18,
+    dia: '2025-01-01',
+    zona_id: 'EPA-01-089-0014',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('1.172222222222222222222222222222222'),
+    cantidad: 18,
+    dia: '2025-01-01',
+    zona_id: 'EPA-01-097-0003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('2.255555555555555555555555555555556'),
+    cantidad: 18,
+    dia: '2025-01-01',
+    zona_id: 'EPA-01-101-1002',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('2.744444444444444444444444444444444'),
+    cantidad: 18,
+    dia: '2025-01-01',
+    zona_id: 'EPA-01-103-0011',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('2.827777777777777777777777777777778'),
+    cantidad: 18,
+    dia: '2025-01-01',
+    zona_id: 'EPA-01-119-0003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('1.566666666666666666666666666666667'),
+    cantidad: 18,
+    dia: '2025-01-01',
+    zona_id: 'EPA-01-125-0011',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('40.000000'),
+    cantidad: 15,
+    dia: '2025-01-01',
+    zona_id: 'EPA-02-020-0018',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('68.93333333333333333333333333333333'),
+    cantidad: 15,
+    dia: '2025-01-01',
+    zona_id: 'EPA-02-090-0040',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('39.13333333333333333333333333333333'),
+    cantidad: 15,
+    dia: '2025-01-01',
+    zona_id: 'EPA-02-170-0010',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('3.105882352941176470588235294117647'),
+    cantidad: 17,
+    dia: '2025-01-01',
+    zona_id: 'EPA-04-012-8000',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('337.1176470588235294117647058823529'),
+    cantidad: 17,
+    dia: '2025-01-01',
+    zona_id: 'EPA-04-013-0019',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('185.1176470588235294117647058823529'),
+    cantidad: 17,
+    dia: '2025-01-01',
+    zona_id: 'EPA-04-013-1003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('88.52941176470588235294117647058824'),
+    cantidad: 17,
+    dia: '2025-01-01',
+    zona_id: 'EPA-04-013-1004',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('93.12941176470588235294117647058824'),
+    cantidad: 17,
+    dia: '2025-01-01',
+    zona_id: 'EPA-04-013-2001',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('274.5058823529411764705882352941176'),
+    cantidad: 17,
+    dia: '2025-01-01',
+    zona_id: 'EPA-04-013-4003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('111.4705882352941176470588235294118'),
+    cantidad: 17,
+    dia: '2025-01-01',
+    zona_id: 'EPA-04-013-4005',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('105.6294117647058823529411764705882'),
+    cantidad: 17,
+    dia: '2025-01-01',
+    zona_id: 'EPA-04-013-4021',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('217.5235294117647058823529411764706'),
+    cantidad: 17,
+    dia: '2025-01-01',
+    zona_id: 'EPA-04-013-9812',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('102.9705882352941176470588235294118'),
+    cantidad: 17,
+    dia: '2025-01-01',
+    zona_id: 'EPA-04-013-9997',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('17.22941176470588235294117647058824'),
+    cantidad: 17,
+    dia: '2025-01-01',
+    zona_id: 'EPA-04-015-1000',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('31.76470588235294117647058823529412'),
+    cantidad: 17,
+    dia: '2025-01-01',
+    zona_id: 'EPA-04-019-0011',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('5.166666666666666666666666666666667'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-01-003-0010',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('4.329166666666666666666666666666667'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-01-027-0001',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('4.187500'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-01-049-1003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('4.537500'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-01-055-0010',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('8.879166666666666666666666666666667'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-01-073-0023',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('6.754166666666666666666666666666667'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-01-073-1005',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('5.995833333333333333333333333333333'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-01-073-1010',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('6.558333333333333333333333333333333'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-01-073-2003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('6.716666666666666666666666666666667'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-01-089-0014',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('4.937500'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-01-097-0003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('3.166666666666666666666666666666667'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-01-101-1002',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('5.429166666666666666666666666666667'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-01-103-0011',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('3.900000'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-01-119-0003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('4.120833333333333333333333333333333'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-01-125-0011',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('12.29166666666666666666666666666667'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-02-020-0018',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('38.39166666666666666666666666666667'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-02-090-0040',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('27.58333333333333333333333333333333'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-02-170-0010',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('2.787500'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-04-012-8000',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('43.775000'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-04-013-0019',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('13.47083333333333333333333333333333'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-04-013-1003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('17.725000'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-04-013-1004',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('19.15714285714285714285714285714286'),
+    cantidad: 21,
+    dia: '2025-01-02',
+    zona_id: 'EPA-04-013-2001',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('33.37083333333333333333333333333333'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-04-013-4003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('15.89166666666666666666666666666667'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-04-013-4005',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('17.84583333333333333333333333333333'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-04-013-4021',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('47.09583333333333333333333333333333'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-04-013-9812',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('27.84166666666666666666666666666667'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-04-013-9997',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('10.41428571428571428571428571428571'),
+    cantidad: 7,
+    dia: '2025-01-02',
+    zona_id: 'EPA-04-015-1000',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('11.04166666666666666666666666666667'),
+    cantidad: 24,
+    dia: '2025-01-02',
+    zona_id: 'EPA-04-019-0011',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  }
+]

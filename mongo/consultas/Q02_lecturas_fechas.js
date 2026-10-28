@@ -1,17 +1,17 @@
-// Q02: lecturas desde una fecha inclusive hasta otra exclusiva.
+// Q02: lecturas desde una fecha_utc inclusive hasta otra exclusiva.
 // Las fechas se interpretan en UTC.
-const desde = new Date("2026-10-01T00:00:00Z");
-const hasta = new Date("2026-10-02T00:00:00Z");
+const desde = new Date("2025-01-01T00:00:00Z");
+const hasta = new Date("2025-01-02T00:00:00Z");
 
 if (desde >= hasta) {
-  throw new Error("La fecha desde debe ser anterior a hasta");
+  throw new Error("La fecha_utc desde debe ser anterior a hasta");
 }
 
-const base = db.getSiblingDB("smartcity");
+const base = db;
 
 const resultados = base.lecturas.find(
   {
-    fecha: {
+    fecha_utc: {
       $gte: desde,
       $lt: hasta
     }
@@ -23,9 +23,9 @@ const resultados = base.lecturas.find(
     variable: 1,
     valor: 1,
     unidad: 1,
-    fecha: 1
+    fecha_utc: 1
   }
-).sort({ fecha: 1, sensor_id: 1, _id: 1 }).toArray();
+).sort({ fecha_utc: 1, sensor_id: 1, _id: 1 }).toArray();
 
 print(`Desde: ${desde.toISOString()}`);
 print(`Hasta (exclusiva): ${hasta.toISOString()}`);

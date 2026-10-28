@@ -1,9 +1,9 @@
 // Comparacion controlada de acceso para Q01.
 // Los hints fuerzan cada estrategia; no muestran la eleccion automatica.
-const base = db.getSiblingDB("smartcity");
+const base = db;
 
-const filtro = { sensor_id: "S001" };
-const orden = { fecha: 1, _id: 1 };
+const filtro = { sensor_id: "EPA-01-003-0010-88101-3" };
+const orden = { fecha_utc: 1, _id: 1 };
 
 function comparar(nombre, hint) {
   const explicacion = base.lecturas

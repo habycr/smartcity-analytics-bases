@@ -1,5 +1,5 @@
 // Q07: promedio por tipo de sensor, variable y unidad.
-const base = db.getSiblingDB("smartcity");
+const base = db;
 
 const resultados = base.lecturas.aggregate([
   {

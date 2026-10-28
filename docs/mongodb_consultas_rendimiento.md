@@ -55,7 +55,7 @@ selectividad y consultas. No se afirma que todos esten optimizados.
 Las agrupaciones sobre toda una coleccion pueden requerir recorrerla.
 Los indices tambien consumen almacenamiento y encarecen escrituras.
 
-## Verificacion funcional
+## Verificacion historica con la muestra
 
 Las diez consultas fueron ejecutadas y sus resultados revisados
 sobre una muestra de 8 lecturas, 3 eventos, 2 alertas y 3 incidentes.
@@ -119,10 +119,55 @@ La relacion entre medianas fue 208 a 1 en este experimento.
 - Los 500.000 documentos del benchmark no reemplazan la carga final
   de las fuentes del proyecto.
 
-## Integracion pendiente
+## Integración con la carga de Edward
 
-Edward debe completar modelo, validadores, CRUD y carga de fuentes.
-Debe respetar docs/contrato_mongo.md o coordinar sus cambios.
+Las consultas Q01-Q10 y los scripts de índices usan `fecha_utc` y la
+base seleccionada en la URI. Se ejecutaron sobre `smartcity_integracion`.
 
-Con la carga final corresponde volver a ejecutar las consultas,
-revisar calidad de datos y evaluar planes con distribuciones reales.
+| Comprobación | Resultado observado |
+|---|---|
+| Restauración | 500.023 documentos, cero fallos |
+| Q01 | 8.466 lecturas del sensor EPA-01-003-0010-88101-3 |
+| Q02 | 987 lecturas en [2025-01-01, 2025-01-02), UTC |
+| Q03 | 250.000 lecturas por variable; extremos contrastados |
+| Q04 | 10 eventos críticos de demostración |
+| Q05 | 10 alertas en 7 zonas |
+| Q06 | Los grupos suman 500.000 lecturas; un promedio contrastado |
+| Q07 | Promedios: pm25 = 7,532848; pm10 = 23,409944 |
+| Q08 | Ambiental: 2; infraestructura: 1 |
+| Q09 | Días y variable comprobados; un grupo contrastado |
+| Q10 | 222 identificadores, filtros y orden comprobados |
+
+Q03: pm25 tiene mínimo -10 y máximo 931,3; pm10 tiene mínimo -46
+y máximo 5.133,3. Se conservaron los valores negativos.
+
+### Acceso de Q01 sobre EPA
+
+| Métrica | Recorrido completo | Índice |
+|---|---:|---:|
+| Resultados | 8466 | 8466 |
+| Documentos examinados | 500000 | 8466 |
+| Claves examinadas | 0 | 8466 |
+| Tiempo observado en ms | 167 | 7 |
+
+Se comprobó igualdad de identificadores y orden entre ambas estrategias.
+Sin hint, MongoDB también eligió idx_lecturas_sensor_fecha mediante
+IXSCAN y FETCH, sin una etapa SORT adicional.
+
+Estos tiempos corresponden a una ejecución por estrategia; no son medianas.
+El benchmark sintético anterior conserva sus resultados independientes.
+
+### Fechas, evidencia y alcance
+
+Se comprobaron 499.602 lecturas en 2025 UTC y 398 en enero de 2026 UTC,
+inicio incluido, final excluido e intervalo sin resultados.
+Estos controles temporales usan operaciones equivalentes; no ejecutan
+Q02 con parámetros alternativos.
+
+Las salidas guardadas están en mongo/pruebas/evidencias/integracion/.
+Parte de las comprobaciones se ejecutó desde terminal; todavía no hay
+una suite automatizada completa de integración.
+
+Las pruebas históricas de la muestra requieren adaptación al nuevo esquema.
+La revisión de validadores, CRUD, referencias con PostgreSQL y calidad
+de datos queda fuera de esta validación de consultas.

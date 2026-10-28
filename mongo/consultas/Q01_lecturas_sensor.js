@@ -1,8 +1,8 @@
-// Q01: lecturas de un sensor, ordenadas por fecha.
+// Q01: lecturas de un sensor, ordenadas por fecha_utc.
 // Cambiar este valor para consultar otro sensor.
-const sensorId = "S001";
+const sensorId = "EPA-01-003-0010-88101-3";
 
-const base = db.getSiblingDB("smartcity");
+const base = db;
 
 const resultados = base.lecturas.find(
   { sensor_id: sensorId },
@@ -13,9 +13,9 @@ const resultados = base.lecturas.find(
     variable: 1,
     valor: 1,
     unidad: 1,
-    fecha: 1
+    fecha_utc: 1
   }
-).sort({ fecha: 1, _id: 1 }).toArray();
+).sort({ fecha_utc: 1, _id: 1 }).toArray();
 
 print(`Lecturas del sensor ${sensorId}: ${resultados.length}`);
 printjson(resultados);

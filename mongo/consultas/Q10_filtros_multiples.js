@@ -1,14 +1,14 @@
 // Q10: combinar zona, tipo, variable, unidad, fechas y valor.
 // El umbral es ficticio para desarrollo; no es un limite normativo.
-const zonaId = "Z002";
+const zonaId = "EPA-04-013-0019";
 const tipoSensor = "particulas";
 const variable = "pm25";
 const unidad = "µg/m³";
 const umbral = 40;
-const desde = new Date("2026-10-01T00:00:00Z");
-const hasta = new Date("2026-10-03T00:00:00Z");
+const desde = new Date("2025-01-01T00:00:00Z");
+const hasta = new Date("2026-01-02T00:00:00Z");
 
-const base = db.getSiblingDB("smartcity");
+const base = db;
 
 const resultados = base.lecturas.find(
   {
@@ -16,7 +16,7 @@ const resultados = base.lecturas.find(
     tipo_sensor: tipoSensor,
     variable,
     unidad,
-    fecha: { $gte: desde, $lt: hasta },
+    fecha_utc: { $gte: desde, $lt: hasta },
     valor: { $gt: umbral }
   },
   {
@@ -27,9 +27,9 @@ const resultados = base.lecturas.find(
     variable: 1,
     valor: 1,
     unidad: 1,
-    fecha: 1
+    fecha_utc: 1
   }
-).sort({ fecha: 1, _id: 1 }).toArray();
+).sort({ fecha_utc: 1, _id: 1 }).toArray();
 
 print(`Lecturas encontradas: ${resultados.length}`);
 printjson(resultados);

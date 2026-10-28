@@ -1,5 +1,5 @@
 // Q05: cantidad de alertas emitidas por zona.
-const base = db.getSiblingDB("smartcity");
+const base = db;
 
 const resultados = base.alertas.aggregate([
   {

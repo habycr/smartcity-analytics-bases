@@ -1,17 +1,17 @@
 // Q09: evolucion diaria de una variable por zona, en UTC.
-const variable = "temperatura";
-const unidad = "°C";
-const desde = new Date("2026-10-01T00:00:00Z");
-const hasta = new Date("2026-10-03T00:00:00Z");
+const variable = "pm25";
+const unidad = "µg/m³";
+const desde = new Date("2025-01-01T00:00:00Z");
+const hasta = new Date("2025-01-03T00:00:00Z");
 
-const base = db.getSiblingDB("smartcity");
+const base = db;
 
 const resultados = base.lecturas.aggregate([
   {
     $match: {
       variable,
       unidad,
-      fecha: { $gte: desde, $lt: hasta }
+      fecha_utc: { $gte: desde, $lt: hasta }
     }
   },
   {
@@ -20,7 +20,7 @@ const resultados = base.lecturas.aggregate([
         dia: {
           $dateToString: {
             format: "%Y-%m-%d",
-            date: "$fecha",
+            date: "$fecha_utc",
             timezone: "UTC"
           }
         },

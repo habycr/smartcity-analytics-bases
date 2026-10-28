@@ -1,4 +1,4 @@
-# Contrato inicial de datos MongoDB
+# Contrato de datos MongoDB
 
 ## Alcance y responsables
 
@@ -17,7 +17,7 @@ referencias automáticamente. Se permiten campos adicionales.
 ## Conexión y compatibilidad
 
 - URI local: `mongodb://127.0.0.1:27017`.
-- Base: `smartcity`.
+- Base de integración: `smartcity_integracion`.
 - Colecciones: `lecturas`, `eventos`, `alertas`, `incidentes`.
 - MongoDB Community Server 8.0 y `mongosh`, en Ubuntu o Windows.
 - Archivos de scripts y documentación en UTF-8.
@@ -27,8 +27,10 @@ con `mongo/carga/muestra.js`; no se comparten carpetas internas del servidor.
 La prueba `verificar_agregaciones.sh` necesita Bash, incluido Git Bash
 en Windows. Consultar [la guía de ejecución](guia_ejecucion_mongodb.md).
 
-Los scripts actuales seleccionan su base mediante `getSiblingDB`.
-Cambiar solamente la base de la URI no cambia ese destino.
+Q01-Q10 y los scripts de mongo/indices/ utilizan la base seleccionada
+en la URI de mongosh mediante `db`. Indicar siempre la base al ejecutarlos.
+Los scripts históricos de muestra, pruebas y benchmark pueden fijar
+sus propias bases internamente.
 
 ## Reglas comunes
 
@@ -36,7 +38,7 @@ Cambiar solamente la base de la URI no cambia ese destino.
 - `_id`: único dentro de cada colección. La muestra usa cadenas.
   La carga final puede usar otro tipo BSON válido, conservando exactamente
   el valor y tipo del identificador en sus referencias.
-- `fecha`: BSON Date con instantes expresados en UTC; no guardar texto
+- `fecha_utc`: BSON Date con instantes expresados en UTC; no guardar texto
   como sustituto de este campo.
 - Rangos de consulta: inicio incluido y final excluido (`$gte`, `$lt`).
 - Agrupación diaria: UTC.
@@ -59,7 +61,7 @@ Cambiar solamente la base de la URI no cambia ese destino.
 | `variable` | Cadena | Magnitud medida |
 | `valor` | Número | Valor observado o generado |
 | `unidad` | Cadena | Unidad de la magnitud |
-| `fecha` | BSON Date | Instante de la lectura |
+| `fecha_utc` | BSON Date | Instante de la lectura |
 | `fuente` | Cadena | Procedencia |
 | `sintetico` | Booleano | Indica si es un dato generado |
 
@@ -78,7 +80,7 @@ No cambiar la escritura de las unidades entre documentos equivalentes.
 | `lectura_id` | Mismo tipo que `lecturas._id` | Referencia opcional a la lectura |
 | `categoria` | Cadena | Categoría del evento |
 | `severidad` | Cadena | Q04 busca exactamente `"critica"` |
-| `fecha` | BSON Date | Instante del evento |
+| `fecha_utc` | BSON Date | Instante del evento |
 | `fuente` | Cadena | Procedencia |
 | `sintetico` | Booleano | Indica si es un dato generado |
 
@@ -97,7 +99,7 @@ Q04 recupera eventos ya clasificados; no los genera.
 | `umbral` | Número | Umbral aplicado |
 | `unidad` | Cadena | Unidad común de valor y umbral |
 | `estado` | Cadena | Estado de atención |
-| `fecha` | BSON Date | Instante de la alerta |
+| `fecha_utc` | BSON Date | Instante de la alerta |
 | `fuente` | Cadena | Procedencia |
 | `sintetico` | Booleano | Indica si es un dato generado |
 
@@ -113,7 +115,7 @@ todavía debe definirse su mecanismo de generación.
 | `zona_id` | Cadena | Zona asociada |
 | `categoria` | Cadena | Agrupación de Q08 |
 | `descripcion` | Cadena | Descripción del incidente |
-| `fecha` | BSON Date | Instante del incidente |
+| `fecha_utc` | BSON Date | Instante del incidente |
 | `fuente` | Cadena | Procedencia |
 | `sintetico` | Booleano | Indica si es un dato generado |
 
@@ -169,7 +171,26 @@ para consultar la carga definitiva.
 6. Ejecutar Q01-Q10 con parámetros adecuados para las fuentes finales,
    revisar resultados y volver a evaluar los planes e índices.
 
-La evidencia actual corresponde a la muestra y al benchmark independiente.
-La validación conjunta con la carga definitiva sigue pendiente.
+Se ejecutaron Q01-Q10 sobre el respaldo de Edward restaurado en
+`smartcity_integracion`: 500.000 lecturas, 10 eventos, 10 alertas y
+3 incidentes. Se comprobaron los resultados principales y el acceso
+indexado de Q01. Esta validación no acredita los validadores, el CRUD,
+la generación de eventos ni la integración con PostgreSQL.
 Consultar [consultas y rendimiento](mongodb_consultas_rendimiento.md).
 
+
+
+## Compatibilidad con la muestra anterior
+
+El campo temporal del modelo integrado es `fecha_utc`.
+La muestra histórica utiliza `fecha` y parámetros diferentes.
+Sus pruebas requieren adaptación antes de evaluar las consultas actuales.
+
+No ejecutar `mongo/carga/muestra.js` sobre `smartcity_integracion`.
+El benchmark sintético conserva su esquema independiente.
+
+La carga EPA utiliza Decimal128 para `valor`, variables `pm25` y `pm10`,
+tipo `particulas` y unidad `µg/m³`.
+Los valores negativos se conservaron; su tratamiento de calidad sigue
+pendiente de una decisión documentada.
+Los eventos y alertas revisados son datos de demostración.

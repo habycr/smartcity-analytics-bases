@@ -1,5 +1,5 @@
 // Q03: máximos y mínimos registrados por variable y unidad.
-const base = db.getSiblingDB("smartcity");
+const base = db;
 
 const resultados = base.lecturas.aggregate([
   {

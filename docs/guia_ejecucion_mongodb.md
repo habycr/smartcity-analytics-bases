@@ -1,170 +1,108 @@
-# Guia de ejecucion MongoDB: Ubuntu y Windows
+# Ejecución MongoDB: Ubuntu y Windows
 
-## Requisitos comunes
+## Requisitos
 
-- MongoDB Community Server 8.0 instalado.
-- mongosh instalado y disponible en la terminal.
-- Archivos del proyecto guardados en UTF-8.
-- Ejecutar los comandos desde la raiz de smartcity-analytics.
+- MongoDB Server y mongosh.
+- MongoDB Database Tools para utilizar mongorestore.
+- Ejecutar los comandos desde la raíz del repositorio.
+- Cada integrante utiliza su propio servidor local.
 
-MongoDB Compass es opcional y no sustituye al servidor.
-Cada integrante utiliza su propia base local.
-No es necesario compartir las carpetas internas de MongoDB:
-los datos se reproducen mediante los scripts de carga.
+Guardar smartcity_500k.archive.gz en mongo/backups/, sin descomprimir.
+El respaldo debe permanecer excluido de Git.
 
-# Ubuntu
+## Iniciar el servidor
 
-## 1. Entrar al proyecto
+Ubuntu:
 
-cd ~/Documentos/smartcity-analytics
-
-## 2. Iniciar y verificar MongoDB
-
+```bash
 sudo systemctl start mongod
-systemctl is-active mongod
+```
 
-mongosh "mongodb://127.0.0.1:27017/smartcity" --quiet --eval 'db.runCommand({ ping: 1 })'
+En el equipo Ubuntu utilizado, MongoDB funcionó con el kernel
+6.8.0-147-generic. El arranque con 7.0.0-38-generic fue rechazado
+por la versión instalada de MongoDB.
 
-Esperado: active y { ok: 1 }.
+Windows, PowerShell como administrador si el servicio se llama MongoDB:
 
-## 3. Cargar la muestra
+```powershell
+Get-Service -Name MongoDB
+Start-Service -Name MongoDB
+```
 
-mongosh "mongodb://127.0.0.1:27017/smartcity" --quiet --file mongo/carga/muestra.js
+Los comandos restantes pueden ejecutarse desde una terminal normal.
 
-## 4. Crear indices
+## Comprobar conexión y destino
 
-mongosh "mongodb://127.0.0.1:27017/smartcity" --quiet --file mongo/indices/crear_indices.js
+Los siguientes comandos funcionan en Bash y PowerShell:
 
-## 5. Ejecutar una consulta
+```text
+mongosh "mongodb://127.0.0.1:27017/smartcity_integracion" --quiet --eval 'db.runCommand({ ping: 1 })'
+mongosh "mongodb://127.0.0.1:27017/smartcity_integracion" --quiet --eval 'printjson(db.getCollectionNames())'
+```
 
-mongosh "mongodb://127.0.0.1:27017/smartcity" --quiet --file mongo/consultas/Q01_lecturas_sensor.js
+## Restauración inicial
 
-## 6. Ejecutar las diez consultas
+Ejecutar únicamente en una base de destino vacía.
+Si ya se restauró correctamente, continuar con los índices.
 
+```text
+mongorestore --uri="mongodb://127.0.0.1:27017" --gzip --archive="mongo/backups/smartcity_500k.archive.gz" --nsFrom="smartcity.*" --nsTo="smartcity_integracion.*"
+```
+
+Esperado: 500.000 lecturas, 10 eventos, 10 alertas y 3 incidentes.
+No cargar muestra.js en esta base.
+
+## Índices y consulta individual
+
+Comandos comunes para ambos sistemas:
+
+```text
+mongosh "mongodb://127.0.0.1:27017/smartcity_integracion" --quiet --file mongo/indices/crear_indices.js
+mongosh "mongodb://127.0.0.1:27017/smartcity_integracion" --quiet --file mongo/consultas/Q01_lecturas_sensor.js
+mongosh "mongodb://127.0.0.1:27017/smartcity_integracion" --quiet --file mongo/indices/comparar_planes.js
+```
+
+Q01-Q10 y los scripts de índices usan la base indicada en la URI.
+El campo temporal es fecha_utc.
+Los parámetros se ajustan al inicio de cada consulta.
+
+## Ejecutar todas las consultas
+
+Ubuntu, Bash:
+
+```bash
 (
   set -e
   for archivo in mongo/consultas/Q*.js; do
-    echo "Ejecutando: $archivo"
-    mongosh "mongodb://127.0.0.1:27017/smartcity" --quiet --file "$archivo"
+    mongosh "mongodb://127.0.0.1:27017/smartcity_integracion" --quiet --file "$archivo"
   done
 )
+```
 
-## 7. Ejecutar las pruebas
+Windows, PowerShell:
 
-mongosh "mongodb://127.0.0.1:27017/smartcity" --quiet --file mongo/pruebas/verificar_muestra.js
-
-bash mongo/pruebas/verificar_agregaciones.sh
-
-Esperado:
-- 11 comprobaciones basicas aprobadas.
-- Cinco consultas de agregacion aprobadas.
-
-## 8. Guardar comparacion de planes
-
-mkdir -p mongo/pruebas/evidencias
-
-mongosh "mongodb://127.0.0.1:27017/smartcity" --quiet --file mongo/indices/comparar_planes.js > mongo/pruebas/evidencias/comparacion_planes_muestra.txt
-
-## 9. Ejecutar benchmark independiente
-
-mongosh "mongodb://127.0.0.1:27017/smartcity_rendimiento" --quiet --file mongo/pruebas/rendimiento.js > mongo/pruebas/evidencias/rendimiento_500k.txt
-
-cat mongo/pruebas/evidencias/rendimiento_500k.txt
-
-# Windows: PowerShell
-
-## 1. Entrar al proyecto
-
-Adaptar la ruta a la ubicacion real:
-
-cd "C:\Users\Edward\Documents\smartcity-analytics"
-
-## 2. Comprobar mongosh
-
-mongosh --version
-
-Si no se reconoce, instalar mongosh o agregar su carpeta al PATH.
-Despues de modificar el PATH, abrir una nueva terminal.
-
-## 3. Iniciar y verificar MongoDB
-
-Si MongoDB fue instalado como servicio con el nombre predeterminado,
-abrir PowerShell como administrador y ejecutar:
-
-Get-Service -Name MongoDB
-Start-Service -Name MongoDB
-
-Una vez iniciado el servicio, los comandos restantes pueden
-ejecutarse desde PowerShell normal.
-
-mongosh "mongodb://127.0.0.1:27017/smartcity" --quiet --eval 'db.runCommand({ ping: 1 })'
-
-Esperado: { ok: 1 }.
-
-Si Get-Service indica que el servicio no existe, revisar la instalacion
-de MongoDB Server y el nombre del servicio configurado.
-
-## 4. Cargar la muestra
-
-mongosh "mongodb://127.0.0.1:27017/smartcity" --quiet --file mongo/carga/muestra.js
-
-## 5. Crear indices
-
-mongosh "mongodb://127.0.0.1:27017/smartcity" --quiet --file mongo/indices/crear_indices.js
-
-## 6. Ejecutar una consulta
-
-mongosh "mongodb://127.0.0.1:27017/smartcity" --quiet --file mongo/consultas/Q01_lecturas_sensor.js
-
-## 7. Ejecutar las diez consultas
-
+```powershell
 Get-ChildItem "mongo/consultas/Q*.js" | Sort-Object Name | ForEach-Object {
-    Write-Host "Ejecutando: $($_.Name)"
-    mongosh "mongodb://127.0.0.1:27017/smartcity" --quiet --file $_.FullName
+    mongosh "mongodb://127.0.0.1:27017/smartcity_integracion" --quiet --file $_.FullName
     if ($LASTEXITCODE -ne 0) {
-        throw "Fallo la consulta $($_.Name)"
+        throw "Falló la consulta $($_.Name)"
     }
 }
+```
 
-## 8. Ejecutar las pruebas basicas
+## Evidencias y pruebas anteriores
 
-mongosh "mongodb://127.0.0.1:27017/smartcity" --quiet --file mongo/pruebas/verificar_muestra.js
+Consultar docs/mongodb_consultas_rendimiento.md para resultados y límites.
+Las evidencias guardadas están en mongo/pruebas/evidencias/integracion/.
 
-Esperado: 11 comprobaciones aprobadas.
+verificar_muestra.js y verificar_agregaciones.sh pertenecen a la muestra
+histórica con fecha y parámetros antiguos. Requieren adaptación antes de
+utilizarlos para evaluar las consultas actuales.
+El archivo .sh necesita Bash, incluido Git Bash en Windows.
 
-La prueba verificar_agregaciones.sh requiere Bash.
-Si se tiene Git Bash instalado, abrir Git Bash en la raiz del
-proyecto y ejecutar:
+El benchmark rendimiento.js conserva su base interna smartcity_rendimiento
+y su esquema independiente. Sus resultados no equivalen a los de EPA.
 
-bash mongo/pruebas/verificar_agregaciones.sh
-
-Esta prueba utiliza el MongoDB local de Windows.
-No necesita instalar otro servidor en WSL.
-
-## 9. Guardar comparacion de planes
-
-New-Item -ItemType Directory -Force -Path "mongo/pruebas/evidencias" | Out-Null
-
-mongosh "mongodb://127.0.0.1:27017/smartcity" --quiet --file mongo/indices/comparar_planes.js | Out-File -Encoding utf8 "mongo/pruebas/evidencias/comparacion_planes_muestra.txt"
-
-## 10. Ejecutar benchmark independiente
-
-mongosh "mongodb://127.0.0.1:27017/smartcity_rendimiento" --quiet --file mongo/pruebas/rendimiento.js | Out-File -Encoding utf8 "mongo/pruebas/evidencias/rendimiento_500k.txt"
-
-Get-Content "mongo/pruebas/evidencias/rendimiento_500k.txt"
-
-# Consideraciones para ambos sistemas
-
-- La muestra contiene 8 lecturas, 3 eventos, 2 alertas y 3 incidentes.
-- Repetir muestra.js restablece sus documentos sin duplicarlos.
-- No elimina otros documentos presentes en las colecciones.
-- Las pruebas de agregaciones esperan una base con solo la muestra.
-- Ejecutar estas pruebas antes de incorporar la carga definitiva.
-- El benchmark genera 500.000 documentos sinteticos en una base aparte.
-- No reemplaza la carga final del proyecto.
-- Los tiempos de rendimiento pueden variar entre computadoras.
-- Los scripts fijan internamente sus bases mediante getSiblingDB.
-  Cambiar solo el nombre de la base en la URI no cambia ese destino.
-- Mantener los campos y tipos de docs/contrato_mongo.md.
-- Conservar evidencia de cada equipo por separado si se desea comparar:
-  los comandos de redireccion sobrescriben el archivo de salida.
+Los comandos están preparados para Bash y PowerShell.
+La ejecución de esta integración se verificó en Ubuntu.
+Falta comprobarla en Windows.

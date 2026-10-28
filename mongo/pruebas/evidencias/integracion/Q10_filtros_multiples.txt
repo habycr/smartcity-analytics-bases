@@ -1,0 +1,2223 @@
+Lecturas encontradas: 222
+[
+  {
+    _id: 'SC-1492aa16e1295a04fb6256640a539053444ef38f',
+    fecha_utc: ISODate('2025-01-01T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('931.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-f7541bd7569e691022962820a11864f6b3d94372',
+    fecha_utc: ISODate('2025-01-01T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('920.700000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-5a565f8f71318ca1e686311dc475fbfbaa440cb5',
+    fecha_utc: ISODate('2025-01-01T09:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('885.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-fceef2098c421562bd9f67d4ed47c7e36109d8fb',
+    fecha_utc: ISODate('2025-01-01T10:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('728.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-cf49af7a193015e39fa67979427d1ff8e4ec5d18',
+    fecha_utc: ISODate('2025-01-01T11:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('712.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-8cce317bd86f129db89ddbedc5af84c143cb1580',
+    fecha_utc: ISODate('2025-01-01T12:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('542.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-3e293474e16806fc8d64b1c77a4077a94950e17f',
+    fecha_utc: ISODate('2025-01-01T13:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('455.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-b00109893175aaf9232b1a56a55c2b1423889ec9',
+    fecha_utc: ISODate('2025-01-01T14:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('281.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-92556e9493bd3ad84cc28512fd873bf65bef7eb6',
+    fecha_utc: ISODate('2025-01-01T15:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('87.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-17831917d172eb88741bd2e352b3d6f95fc30d7f',
+    fecha_utc: ISODate('2025-01-01T16:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('45.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-f1f32955cea6bde892e3b414f04814a02f196824',
+    fecha_utc: ISODate('2025-01-02T01:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('46.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-f52f3f69b5a48ced68630676fa844508cdbfd074',
+    fecha_utc: ISODate('2025-01-02T02:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('70.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-484962d11cd51fe6c3974e0c75d438f761482b58',
+    fecha_utc: ISODate('2025-01-02T03:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('60.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-d35c8e0c43395e60c915c3f39ac3232e96876585',
+    fecha_utc: ISODate('2025-01-02T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('68.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-0ca6b7c12c192789a7d4ebc45b7ab18b747ded33',
+    fecha_utc: ISODate('2025-01-02T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('99.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-07d9c850e641dc2ed822cf8884b13ae0a496af62',
+    fecha_utc: ISODate('2025-01-02T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('104.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-c0d1bf87ef7191502736728b272a89cfe3d34c9d',
+    fecha_utc: ISODate('2025-01-02T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('92.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-60ff2b0a3619c3cd972acfc4116038b607ba864e',
+    fecha_utc: ISODate('2025-01-02T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('76.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-ca3d936e786617ede23b9476a0c12c731b93ee23',
+    fecha_utc: ISODate('2025-01-02T09:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('67.700000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-17fe8ce45c05c1617d35d708c63395dff6526d93',
+    fecha_utc: ISODate('2025-01-02T10:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('59.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-6e6afa5a8bdfc49936e4d7f367680802833c8edd',
+    fecha_utc: ISODate('2025-01-02T11:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('49.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-6ce9b532d77787d7b9c42ad0044e92d6a3a4d160',
+    fecha_utc: ISODate('2025-01-03T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('40.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-18150e9b904ed029f9669c56e4c56198904bbc9e',
+    fecha_utc: ISODate('2025-01-03T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('49.700000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-552c29d0e868a7e0d041c5f89585a02c9a7069b7',
+    fecha_utc: ISODate('2025-01-03T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('50.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-9b5d7c40e34a9c7dca4b3aa23a58ddbcb245aee4',
+    fecha_utc: ISODate('2025-01-04T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('55.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-a72ff95b19723a2696867dc6453cee196e70e14d',
+    fecha_utc: ISODate('2025-01-04T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('59.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-dbb2641103938af0d9c0d885c8698990d6c4a328',
+    fecha_utc: ISODate('2025-01-04T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('44.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-2611acd3d55bbd79b50896d99c77330328867f8d',
+    fecha_utc: ISODate('2025-01-06T10:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('41.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-bdf54780fed4f9faba1bf63b92b3840a9d79979e',
+    fecha_utc: ISODate('2025-01-06T14:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('43.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-dc53cc2723c3f0c647d165731aac1d09aa0114a4',
+    fecha_utc: ISODate('2025-01-11T11:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('40.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-10030078838de26b5df56037a8ee86bfe3135681',
+    fecha_utc: ISODate('2025-01-11T12:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('40.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-de9f149da298877d9dbb6b70263eb004ad11d71e',
+    fecha_utc: ISODate('2025-01-12T03:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('45.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-584dec91b3263beb7ae362c9f26e01acfbe8ab8e',
+    fecha_utc: ISODate('2025-01-12T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('45.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-687ce79e4a7d10fc1c56c76ef7002139f20dabca',
+    fecha_utc: ISODate('2025-01-12T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('44.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-67859c10ecbe7973126145afa4e939c7a20ad51e',
+    fecha_utc: ISODate('2025-01-12T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('44.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-d028b8a3a51255fe29d664f89389892acaa71891',
+    fecha_utc: ISODate('2025-01-12T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('49.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-644c58654e255d2579e165f00276085b39711d22',
+    fecha_utc: ISODate('2025-01-12T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('61.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-22eac336b777a5269f9451e189ce2d62d4bab29b',
+    fecha_utc: ISODate('2025-01-12T09:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('55.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-6adf5252ed555e2bd87ab097177fa362a7c1a6f7',
+    fecha_utc: ISODate('2025-01-12T16:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('41.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-f7f07202bffe08491df1ab4f2abb742c7c2656d4',
+    fecha_utc: ISODate('2025-01-13T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('44.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-7a3139f0aa65262ead139bcd4e9a34d955d5d266',
+    fecha_utc: ISODate('2025-01-13T09:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('58.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-d4066373756c48f1f3ac7d80640f82464e10a37c',
+    fecha_utc: ISODate('2025-01-13T10:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('42.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-7be4e66d1ab76e690045e95df792f6ace4e966fa',
+    fecha_utc: ISODate('2025-01-14T14:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('40.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-4fac45370220a7819b5fb0142d097d977c2dbac9',
+    fecha_utc: ISODate('2025-01-14T15:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('49.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-71a3bacd273166d1b18c246ef9afb08bbd9e0d2c',
+    fecha_utc: ISODate('2025-01-14T16:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('47.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-904b868f7d8586f4db731fa53b6d8341e7e7fd02',
+    fecha_utc: ISODate('2025-01-19T03:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('41.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-655a4b1f5a510f2ee12e25e50e25925dc12ddf59',
+    fecha_utc: ISODate('2025-01-19T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('65.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-9ea4d245c9f7ec5ab2194f30481d8565cea297f8',
+    fecha_utc: ISODate('2025-01-19T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('68.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-8e98816dbbfbcb973cfdfd020ce32e09c39c3fcb',
+    fecha_utc: ISODate('2025-01-19T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('70.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-3164ab3c2786bfa79a9b26984d9618c1a5c05f03',
+    fecha_utc: ISODate('2025-01-19T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('61.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-5121ebfe37a42e05f628bedf42083846cf2122d5',
+    fecha_utc: ISODate('2025-01-19T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('56.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-42083296a14dc5245f4d24239f0686c831752a79',
+    fecha_utc: ISODate('2025-01-19T09:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('67.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-9d4425e83ef216adcd745fc9dee702be7fc92c3c',
+    fecha_utc: ISODate('2025-01-19T10:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('65.700000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-f329028d0783d2efda0fd7160c2ff934b3a58761',
+    fecha_utc: ISODate('2025-01-19T11:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('52.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-97906b3e564512e65af67b6dde2cbd6dbb05cf6d',
+    fecha_utc: ISODate('2025-01-19T12:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('44.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-a8bbb0dac7f337b34c2f0947e49131fad1d117fe',
+    fecha_utc: ISODate('2025-01-19T13:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('41.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-74ac792185a37be9abb687909b1c257c98bc102c',
+    fecha_utc: ISODate('2025-01-19T14:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('41.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-a32b25b2926ce0ae4ba74ea7b9a4e7472bedf3d1',
+    fecha_utc: ISODate('2025-01-19T15:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('42.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-01178c19f8d9b175aaa2569a8002a87c9dd92c02',
+    fecha_utc: ISODate('2025-01-20T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('42.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-07319aad296409799e450fb8b4bedc107d9bab7c',
+    fecha_utc: ISODate('2025-01-20T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('45.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-1c3aba026cc5fc77246e8368b9217350b66844b3',
+    fecha_utc: ISODate('2025-01-20T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('46.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-3a52e255d518930f7fda88ae08d9a4ec33f58d0c',
+    fecha_utc: ISODate('2025-01-20T09:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('46.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-ad58a0b3392b78bf6901ab605e4ed72bf2b15749',
+    fecha_utc: ISODate('2025-01-20T10:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('45.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-fd0e440fd5351c41c6c8e062fad5314c2c84d9b1',
+    fecha_utc: ISODate('2025-01-20T11:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('40.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-d92fdc0b157de3f8a6a50bb94f1a2ba8b339f639',
+    fecha_utc: ISODate('2025-01-20T15:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('40.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-994fd4f85b23c4bb4e4f6364629448770a36471c',
+    fecha_utc: ISODate('2025-01-20T16:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('43.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-94c246c9801323343b6a5aeffcf2ada40e83f920',
+    fecha_utc: ISODate('2025-01-22T15:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('41.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-3b569932f7ad0b78bb5a0668b1f5ea895a051714',
+    fecha_utc: ISODate('2025-01-22T16:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('43.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-ba5e2db8dfc8d84d384474ac449e54626d009a2f',
+    fecha_utc: ISODate('2025-01-23T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('57.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-fefa29391ca92e036c28ae2586bfa63b69dab177',
+    fecha_utc: ISODate('2025-01-23T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('43.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-100545f4e9685497830fe954cf2b923e1c63f598',
+    fecha_utc: ISODate('2025-01-23T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('40.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-4a639659ed54ae666b0c45cf0bc9bf11c44dead6',
+    fecha_utc: ISODate('2025-01-23T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('52.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-e5283eee1ad3ae9c9b1d9eea9c062898893d239a',
+    fecha_utc: ISODate('2025-01-25T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('45.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-04532f6fa84588feeca9fde265baac3c9eee5448',
+    fecha_utc: ISODate('2025-01-25T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('47.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-2625a3db4ea11f0432ab146ecd954c458b5eed02',
+    fecha_utc: ISODate('2025-01-26T03:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('41.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-b0cae19ed2f78fe549ac8413b9f79594a7e105b4',
+    fecha_utc: ISODate('2025-01-26T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('70.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-311c93c501b4be723b06f3fcc5cb24e45c15c0c7',
+    fecha_utc: ISODate('2025-01-26T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('72.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-35871bb685ac6a718fc5dd3bf8104c7e17a0335e',
+    fecha_utc: ISODate('2025-01-26T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('64.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-d1127000d942264f0a2f6a7ae4fce5b82e30e77b',
+    fecha_utc: ISODate('2025-01-27T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('45.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-22b1d99f9bd0e6d11319815ac36974f35bf0e2f3',
+    fecha_utc: ISODate('2025-02-01T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('50.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-b8627098126739e5d69ee1f16e1620437202c43b',
+    fecha_utc: ISODate('2025-02-01T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('47.700000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-4dcdef950edd9eaefb1735ec553d444624d8f1d8',
+    fecha_utc: ISODate('2025-02-01T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('46.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-9f445014f3fd32bf4ebbac05d2ab606b5f00f322',
+    fecha_utc: ISODate('2025-02-01T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('44.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-0df0b43a7777daf04fc12dbe1179d6f3b72597fa',
+    fecha_utc: ISODate('2025-02-01T11:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('40.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-ef3735aa165ff25f0f374e2508fe8a6676cef4c1',
+    fecha_utc: ISODate('2025-02-01T12:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('43.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-7f658084683b6c9d7a1771e525494dd8045cf6ae',
+    fecha_utc: ISODate('2025-02-02T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('42.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-d033dab5fb4285e694c9ed2623353a14e59a1b7b',
+    fecha_utc: ISODate('2025-02-02T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('43.700000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-85dad34b7a696a1f2e3fecb5e0af71dcec37afcd',
+    fecha_utc: ISODate('2025-02-02T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('57.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-9390a21d60f4c62b1ec4eca63a701837ba6bcf49',
+    fecha_utc: ISODate('2025-02-02T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('44.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-8bbcd778d5c97ac06c7964cc15044147b4e154d3',
+    fecha_utc: ISODate('2025-02-03T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('48.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-6d599420d15795cc32ea5df0773fd7e1b1f380a6',
+    fecha_utc: ISODate('2025-02-06T11:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('46.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-e1109f230687ea21e3c4bdb2e01f8fec267122ea',
+    fecha_utc: ISODate('2025-07-01T10:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('40.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-3f012c496bccf02729b2e5de7dbd533f86eea0c1',
+    fecha_utc: ISODate('2025-07-01T11:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('74.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-c386fdfea46b7ce4284e26b7077a0a271284e019',
+    fecha_utc: ISODate('2025-07-01T12:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('105.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-99e66999ee313312b2f1baa17d764e8e3fad2e0f',
+    fecha_utc: ISODate('2025-07-01T13:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('104.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-5fcfaaa561ca1b45d6d2251d7d99c1e0a4cb8a4f',
+    fecha_utc: ISODate('2025-07-01T14:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('89.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-f85ae136bd645d18856a317b8f3ecc0dc53ff7e6',
+    fecha_utc: ISODate('2025-07-01T15:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('72.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-359cab5b71a649e3145ce2380ba6072ad2f3821d',
+    fecha_utc: ISODate('2025-07-01T16:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('50.700000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-5c89c98a4fffcfd0f0f0fec27fc4f2b379bd9efe',
+    fecha_utc: ISODate('2025-07-05T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('42.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-321a67072997b7dd773d1a8a123cf5304ebad0ed',
+    fecha_utc: ISODate('2025-08-14T10:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('40.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-36999c0e4db72d9a5354f610db4222fb0e2c209e',
+    fecha_utc: ISODate('2025-08-22T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('81.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-e57ca8be07a29fbce6537d925c256a96e1e78047',
+    fecha_utc: ISODate('2025-08-26T01:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('122.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-95f9bec14d73d974e6c707e5ec8c0ced9b970b95',
+    fecha_utc: ISODate('2025-08-26T02:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('41.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-f34e53f79f100efff34e9d96e4863625fa7023c3',
+    fecha_utc: ISODate('2025-09-04T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('275.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-7bb53a71a2cf3b5d75b5e963876ca415f4bb189f',
+    fecha_utc: ISODate('2025-09-04T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('73.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-287e3415cce4d57ae75d8e0dc953d09b016877f5',
+    fecha_utc: ISODate('2025-10-20T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('89.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-f334f863ec8033ee1bdcd6032d8b8b67d7d331e3',
+    fecha_utc: ISODate('2025-10-26T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('46.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-5888f2e7b7b92766d48aee33d1377a4897e3f132',
+    fecha_utc: ISODate('2025-11-02T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('45.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-7adb9ca7825b60fe1361c77ae4f40208dd845618',
+    fecha_utc: ISODate('2025-11-02T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('42.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-fc530af6645b160def89f92b384c3b1504d35a25',
+    fecha_utc: ISODate('2025-11-03T02:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('54.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-b999cabbbab8186090ef66aba148f641be23396e',
+    fecha_utc: ISODate('2025-11-09T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('48.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-0f1348c0d3792ad846822b60661379ab8ed8ad0d',
+    fecha_utc: ISODate('2025-11-09T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('47.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-4e1024ddd7ca1256e19b4f3c3b3ef4b6f09e8b2a',
+    fecha_utc: ISODate('2025-11-09T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('40.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-9485c0cd1a5d60836f0b76f1585cafb8452a79ae',
+    fecha_utc: ISODate('2025-11-09T09:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('41.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-d20045d186680f205a0f351b71b2cd8e95bd2cfd',
+    fecha_utc: ISODate('2025-11-13T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('42.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-1ddfe4c3141b78bf822a1de58395b9c35c0542d8',
+    fecha_utc: ISODate('2025-11-14T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('82.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-254ea1c061f83ab6e5eca9f759c13af81681864f',
+    fecha_utc: ISODate('2025-11-14T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('121.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-c050d3a48796b5225bbd93984df939f413779cb1',
+    fecha_utc: ISODate('2025-11-14T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('43.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-57146ef91dbc4d1fc857dab2caf12956807768f0',
+    fecha_utc: ISODate('2025-11-15T03:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('48.700000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-8fe0475049855e4807e3dfec7075a90ad249a525',
+    fecha_utc: ISODate('2025-11-15T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('44.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-6cc4924b220b8ae7f4368c89151b8c9871b1cc3f',
+    fecha_utc: ISODate('2025-11-15T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('48.700000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-3c4bb239d6a382230a6dc56ccfc056c40e8656d3',
+    fecha_utc: ISODate('2025-11-28T03:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('73.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-32fa042fbf222fcdab5e6b0185ec27f8d210faf4',
+    fecha_utc: ISODate('2025-11-28T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('102.700000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-9101f4ba45c475831d0559623f9ee8aebe563253',
+    fecha_utc: ISODate('2025-11-28T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('110.700000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-51e96eaf40635d03e7d9c5b65db3d1f9546d8d54',
+    fecha_utc: ISODate('2025-11-28T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('124.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-0826a3862f7a54ddd174c4f9417ee20b1a3ef84f',
+    fecha_utc: ISODate('2025-11-28T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('138.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-5bfa7e1da9b1da69388a6f0f5b2f9358c178fe0f',
+    fecha_utc: ISODate('2025-11-28T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('157.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-1ae108a050918b455060f76667e5ecd843badd96',
+    fecha_utc: ISODate('2025-11-28T09:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('156.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-af091503aadd480540aaa5dcbe9011af2d1f568a',
+    fecha_utc: ISODate('2025-11-28T10:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('122.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-84036eedfca86590db0c3d4154edbd3556a0743d',
+    fecha_utc: ISODate('2025-11-28T11:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('86.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-0a6f2a79ef16350a0939985b6be9d37dfb19e722',
+    fecha_utc: ISODate('2025-11-28T12:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('88.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-a98b2428f1e90a0be500886d7641e93d33a9db73',
+    fecha_utc: ISODate('2025-11-28T13:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('77.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-9ac4ff4f1ccba364257f76cd49d84bbea33840e6',
+    fecha_utc: ISODate('2025-11-28T14:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('50.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-89fab538544269de269e0657dc0c4eb6acbb901b',
+    fecha_utc: ISODate('2025-11-29T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('47.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-7f9aad672d307e70cdfac3984e32260837b0fe03',
+    fecha_utc: ISODate('2025-11-29T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('50.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-a3999d351d88634044523ad565146b00e1231861',
+    fecha_utc: ISODate('2025-11-29T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('42.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-4f13e1aa5087d902146786c685f98c2652acacd6',
+    fecha_utc: ISODate('2025-11-30T03:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('63.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-13f90501e043a33da434129b6152d220257bf7fc',
+    fecha_utc: ISODate('2025-11-30T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('62.700000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-492093e436f360377fad069ba31524c132e37dab',
+    fecha_utc: ISODate('2025-11-30T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('60.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-575a6323708105d6b7dd0dd73f557d0b6873d73b',
+    fecha_utc: ISODate('2025-11-30T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('59.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-8f49d85b197cc7f19b7a070efe6503064f1c3d43',
+    fecha_utc: ISODate('2025-11-30T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('69.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-0acde436ba0bfb9a59c685f4933d6dd88477a908',
+    fecha_utc: ISODate('2025-11-30T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('52.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-2dd706c8c9413639f40f9cce660b0e6669311572',
+    fecha_utc: ISODate('2025-11-30T09:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('45.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-4f82e03285974c5aea907c1a5d2ed5722b58ab60',
+    fecha_utc: ISODate('2025-12-01T02:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('43.700000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-6493d341cd33810266dfddd81ed1ac4f075a43c5',
+    fecha_utc: ISODate('2025-12-01T03:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('58.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-f0be02ee330c29fa02112cd863d82adb241b8f73',
+    fecha_utc: ISODate('2025-12-01T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('48.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-09ded1297c588013529fb87b8f8507988aaf9ac9',
+    fecha_utc: ISODate('2025-12-05T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('48.700000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-18a4a5fbfc50cc8bf331c00c662a8739c257b32d',
+    fecha_utc: ISODate('2025-12-06T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('45.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-b6e64d635a7e9dc0a2b11c9ad6ddc7612e2d649f',
+    fecha_utc: ISODate('2025-12-06T09:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('44.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-370d76726d86f17962cd50947739a5da385a09c6',
+    fecha_utc: ISODate('2025-12-07T03:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('45.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-25da6b2acf97dcf57d04fa85d300533b24498e98',
+    fecha_utc: ISODate('2025-12-07T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('48.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-d514199eeb090c9d8bd7bd939c526babb0571e31',
+    fecha_utc: ISODate('2025-12-07T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('79.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-828b60d3b3995991575b3c97574ab2f4de84c300',
+    fecha_utc: ISODate('2025-12-07T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('71.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-8ffa1137f3b583c9f3493967ab7c70fa8ff4f72d',
+    fecha_utc: ISODate('2025-12-07T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('84.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-d68fabf9ee0ef3981f808a1ee29865a8e6ea1d94',
+    fecha_utc: ISODate('2025-12-07T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('90.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-480a4a4f13ac914f3cb3a5dc1b8161cfe129e40e',
+    fecha_utc: ISODate('2025-12-07T09:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('89.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-609abcaf568a11056e8a021e4e8d33c3fd8fcc1c',
+    fecha_utc: ISODate('2025-12-07T10:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('67.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-dc6c099ac17a650a0dd36cedcacb130bbf8ca702',
+    fecha_utc: ISODate('2025-12-07T11:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('49.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-0d24a86a3af4b559eb217b52d5b8df525a967412',
+    fecha_utc: ISODate('2025-12-08T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('50.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-75b4c93a530da8369cec68589b725d806bcdf939',
+    fecha_utc: ISODate('2025-12-08T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('58.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-d5f6b114c617b42849492e2e7dac6d23753f4ce2',
+    fecha_utc: ISODate('2025-12-08T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('58.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-d092df3ef643fdc0eb4791fa723a8bca35238e31',
+    fecha_utc: ISODate('2025-12-08T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('45.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-20b0e296ddc62c1e0ee2c6f1f29b1062015a2c6f',
+    fecha_utc: ISODate('2025-12-08T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('43.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-17b251386c48b52fcbc73fc5c9be7bd278bf1243',
+    fecha_utc: ISODate('2025-12-11T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('45.700000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-36f187e08d3980c206526171daddc59bfca59d66',
+    fecha_utc: ISODate('2025-12-11T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('44.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-cd2bbb03b47aa92c592c7693b5056f788f128437',
+    fecha_utc: ISODate('2025-12-12T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('47.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-cdbd445c1dd14576ad99d6eb6a71cc78e1b31a3c',
+    fecha_utc: ISODate('2025-12-12T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('42.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-417e6158b759d7f0a62c08406af1df7c9c14e263',
+    fecha_utc: ISODate('2025-12-13T03:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('40.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-87ccc439fddf39288a7cb6a5bdfc9fd28c40a725',
+    fecha_utc: ISODate('2025-12-13T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('48.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-140933c2eccdd17c026acdd6b8dd26452c9a29b8',
+    fecha_utc: ISODate('2025-12-13T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('60.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-e186bcdc2aefe61bd3dee7eef9c180437444d39b',
+    fecha_utc: ISODate('2025-12-13T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('71.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-f0b9162952bf42a7007c1f7f4b50116e36f3fb5e',
+    fecha_utc: ISODate('2025-12-13T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('63.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-81e9f92740fc6edcdbec6af2bac99c1df626af3a',
+    fecha_utc: ISODate('2025-12-13T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('48.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-662f3126fc7b425480c3c8f3c4bac0b382d7bd4d',
+    fecha_utc: ISODate('2025-12-14T03:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('45.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-e91085d8399e103bca63f0fac6a27ee268818066',
+    fecha_utc: ISODate('2025-12-14T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('52.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-3e683ae090374050643444fa730fd148d4d9e9e0',
+    fecha_utc: ISODate('2025-12-14T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('54.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-ab923a1e91b02b5fe9acad9142b93c989cffd310',
+    fecha_utc: ISODate('2025-12-14T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('60.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-82f5b6a4433dc91ef86913d59e44c4ddc94e48b8',
+    fecha_utc: ISODate('2025-12-14T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('70.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-b9b53b3f4e2a88203d9f566cc70b2511f59cc14f',
+    fecha_utc: ISODate('2025-12-14T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('74.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-4c3ef833a7a7dc0ba438b7449887bfc727dd9cd9',
+    fecha_utc: ISODate('2025-12-14T09:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('57.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-6551ff8979512d60bdc5ff73cc564c3a84142eb9',
+    fecha_utc: ISODate('2025-12-14T10:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('48.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-036b632277726d0794510c849904878a30b2bcd6',
+    fecha_utc: ISODate('2025-12-15T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('41.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-4369dee6e65941dd296c4c0dfbb259c9f6e75855',
+    fecha_utc: ISODate('2025-12-15T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('45.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-b01bd154ed1ba810f643174ca901cced47b47865',
+    fecha_utc: ISODate('2025-12-15T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('41.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-5fd453ebdc7f8a0e3fb6e1cc14300f923708e5bb',
+    fecha_utc: ISODate('2025-12-18T03:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('45.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-11b37745a2765393538a022357ec97bf1bdaf4c4',
+    fecha_utc: ISODate('2025-12-18T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('49.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-d7fa760b01322eb3eb2d8a287597867447e88427',
+    fecha_utc: ISODate('2025-12-18T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('54.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-003a4211dcd66f4f7c84008742e2fb6a5317dea4',
+    fecha_utc: ISODate('2025-12-20T03:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('50.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-4be4c4a39801ac0575dce063497085b3311148c4',
+    fecha_utc: ISODate('2025-12-20T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('47.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-59b9399bd119375ab8e03b6d7fbee58bbdb9cfd4',
+    fecha_utc: ISODate('2025-12-20T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('49.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-cba43625c95779051cff749e36a4a78fc258d78e',
+    fecha_utc: ISODate('2025-12-20T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('44.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-2ad4aa5c50ee9cebda085d9dc79aebb68acf5993',
+    fecha_utc: ISODate('2025-12-20T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('41.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-35d0a78e5081f97fd1aa706c39205656fafcafaa',
+    fecha_utc: ISODate('2025-12-20T09:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('45.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-accfe74143353bfdf27941db96d94ae9b152668a',
+    fecha_utc: ISODate('2025-12-21T03:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('47.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-99d5bbb2a802b72192e39e021d2bb5f9c222e153',
+    fecha_utc: ISODate('2025-12-21T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('56.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-47ac7e791ab7c41c2ca22c79cedd040c0037c58b',
+    fecha_utc: ISODate('2025-12-21T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('75.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-bbb948f62ccb188473a8d40f79f0b2062ceb1ae1',
+    fecha_utc: ISODate('2025-12-21T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('79.800000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-1473e04e2816c413d9ffd91e9d0d1bebf0e548bb',
+    fecha_utc: ISODate('2025-12-21T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('66.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-3130909596760e46dfbb3957fbb1e937f97a28fc',
+    fecha_utc: ISODate('2025-12-21T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('62.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-d6965e61c8ac14691774d88651bbd1941715ebde',
+    fecha_utc: ISODate('2025-12-21T09:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('68.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-3d44d2958833fe251a2ec7df0ed653d209587fbf',
+    fecha_utc: ISODate('2025-12-21T10:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('63.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-dfc94ffba1096cae5e74435c2969a14af69e45e0',
+    fecha_utc: ISODate('2025-12-21T11:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('51.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-c1f782ddad61d2596ab1fabec6b7c275f1590b08',
+    fecha_utc: ISODate('2025-12-22T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('50.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-4c2c8f40a33368ac6940ee79aa72476628e91fab',
+    fecha_utc: ISODate('2025-12-22T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('52.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-b2dab6a244577e99907c2cdf1e85872d587f0172',
+    fecha_utc: ISODate('2025-12-22T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('43.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-9ecc271d8c3f4fb7c77c6417595a6749807f5236',
+    fecha_utc: ISODate('2025-12-22T09:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('42.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-8a3f55ded71b9b083f82c866142d562652642e50',
+    fecha_utc: ISODate('2025-12-22T10:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('42.000000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-6addc71306f7029fc97c2b8efa9578a1b732f517',
+    fecha_utc: ISODate('2025-12-25T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('54.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-40ddf6121767a9e4610bb2b053aaf272582d7040',
+    fecha_utc: ISODate('2025-12-26T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('49.500000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-28547634c9174d9f11eba88ab8ecb3975ec59236',
+    fecha_utc: ISODate('2025-12-26T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('56.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-d7a403b1e3b492f9371122f2f25e3c1242cc001c',
+    fecha_utc: ISODate('2025-12-26T07:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('65.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-9420a9fa313e36a3ae556728e271bca458b8a310',
+    fecha_utc: ISODate('2025-12-26T08:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('54.900000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-4c8dca7edc685158bda77532bad00e38adfa08f8',
+    fecha_utc: ISODate('2025-12-26T09:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('53.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-47966fb2ba227d0c8448324aadf927db5f973e36',
+    fecha_utc: ISODate('2025-12-26T10:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('55.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-888912114cfd58f9aba7a3f40218d196d43b317d',
+    fecha_utc: ISODate('2025-12-26T11:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('43.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-3f5f6619dbf474feb0d9c36eb1eff68383814286',
+    fecha_utc: ISODate('2025-12-31T03:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('59.300000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-d3d3522973b8130745a62ee51e000c925224fb5d',
+    fecha_utc: ISODate('2025-12-31T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('41.100000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-1026a264e29c677b85ad2459a3c3e3c7f61ebb5c',
+    fecha_utc: ISODate('2026-01-01T02:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('48.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-623a2c7941ed07b016bc2d92f85e8ae8a5536f9a',
+    fecha_utc: ISODate('2026-01-01T03:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('64.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-6f47fbf1e33068128006f53d50d3d3979595b702',
+    fecha_utc: ISODate('2026-01-01T04:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('84.400000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-59fca24364002e6fbce419570cb0cf8bfbf3174d',
+    fecha_utc: ISODate('2026-01-01T05:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('48.200000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  },
+  {
+    _id: 'SC-e12888ef8de6efc6e782dc2d174a02d36e33de85',
+    fecha_utc: ISODate('2026-01-01T06:00:00.000Z'),
+    sensor_id: 'EPA-04-013-0019-88101-3',
+    tipo_sensor: 'particulas',
+    unidad: 'µg/m³',
+    valor: Decimal128('63.600000'),
+    variable: 'pm25',
+    zona_id: 'EPA-04-013-0019'
+  }
+]

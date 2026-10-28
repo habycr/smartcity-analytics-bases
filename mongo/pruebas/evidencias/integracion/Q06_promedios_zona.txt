@@ -1,0 +1,444 @@
+Promedios por zona, variable y unidad:
+[
+  {
+    promedio: Decimal128('6.732104890148830616583982990786676'),
+    cantidad: 8466,
+    zona_id: 'EPA-01-003-0010',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('6.830570556468654613759098379901385'),
+    cantidad: 8518,
+    zona_id: 'EPA-01-027-0001',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('6.355923894011906151511614334072604'),
+    cantidad: 8567,
+    zona_id: 'EPA-01-049-1003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('8.275102711585866885784716516023007'),
+    cantidad: 8519,
+    zona_id: 'EPA-01-055-0010',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('22.20676858443225580581164663321274'),
+    cantidad: 8569,
+    zona_id: 'EPA-01-073-0023',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('10.25673940949935815147625160462131'),
+    cantidad: 8569,
+    zona_id: 'EPA-01-073-0023',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('14.76359274429490930368636629607958'),
+    cantidad: 8545,
+    zona_id: 'EPA-01-073-1005',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('7.338736102984201287302516091281451'),
+    cantidad: 8545,
+    zona_id: 'EPA-01-073-1005',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('17.09512864493996569468267581475129'),
+    cantidad: 8745,
+    zona_id: 'EPA-01-073-1010',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('7.619700434484335696318316944889092'),
+    cantidad: 8746,
+    zona_id: 'EPA-01-073-1010',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('16.63315012023359670216420474063896'),
+    cantidad: 8733,
+    zona_id: 'EPA-01-073-2003',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('7.758297093156328679331654840924697'),
+    cantidad: 8738,
+    zona_id: 'EPA-01-073-2003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('18.91214167792285757166441542848567'),
+    cantidad: 6663,
+    zona_id: 'EPA-01-073-6002',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('8.079396758703481392557022809123649'),
+    cantidad: 6664,
+    zona_id: 'EPA-01-073-6002',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('17.43529977171692899195001802234771'),
+    cantidad: 8323,
+    zona_id: 'EPA-01-089-0014',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('7.637210140574312147062357323080620'),
+    cantidad: 8323,
+    zona_id: 'EPA-01-089-0014',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('7.472509589678019295594560037196327'),
+    cantidad: 8603,
+    zona_id: 'EPA-01-097-0003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('8.143498179255256666275108657347586'),
+    cantidad: 8513,
+    zona_id: 'EPA-01-101-1002',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('6.944588744588744588744588744588745'),
+    cantidad: 8547,
+    zona_id: 'EPA-01-103-0011',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('7.209375733395916451537197840882422'),
+    cantidad: 8522,
+    zona_id: 'EPA-01-119-0003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('7.166150416520004693183151472486214'),
+    cantidad: 8523,
+    zona_id: 'EPA-01-125-0011',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('13.65334617236398651901781415503130'),
+    cantidad: 8308,
+    zona_id: 'EPA-02-020-0018',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('5.197660395561987457790641582247950'),
+    cantidad: 8292,
+    zona_id: 'EPA-02-020-0018',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('22.07689556509298998569384835479256'),
+    cantidad: 8388,
+    zona_id: 'EPA-02-020-0045',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('14.18154867781335230641527333096170'),
+    cantidad: 8433,
+    zona_id: 'EPA-02-020-1004',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('13.98827986267313839232863738605422'),
+    cantidad: 8447,
+    zona_id: 'EPA-02-090-0034',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('8.642675159235668789808917197452229'),
+    cantidad: 8478,
+    zona_id: 'EPA-02-090-0034',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('7.780974750440399295361127422196124'),
+    cantidad: 8515,
+    zona_id: 'EPA-02-090-0040',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('8.943847746090156393744250229990800'),
+    cantidad: 8696,
+    zona_id: 'EPA-02-110-0004',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('7.979199043634190077704722056186491'),
+    cantidad: 8365,
+    zona_id: 'EPA-02-170-0010',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('2.736506024096385542168674698795181'),
+    cantidad: 8300,
+    zona_id: 'EPA-02-170-0010',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('17.29696548529071114199675700718091'),
+    cantidad: 8634,
+    zona_id: 'EPA-04-001-1003',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('18.13581244947453516572352465642684'),
+    cantidad: 8659,
+    zona_id: 'EPA-04-003-0011',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('29.88715725333958284509022732599016'),
+    cantidad: 8534,
+    zona_id: 'EPA-04-003-1005',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('18.65441965883335321483955624478110'),
+    cantidad: 8383,
+    zona_id: 'EPA-04-007-0008',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('21.32038380528902410484437163585303'),
+    cantidad: 8546,
+    zona_id: 'EPA-04-007-1001',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('31.16992606725494872406391605056046'),
+    cantidad: 8386,
+    zona_id: 'EPA-04-007-8000',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('20.11506896551724137931034482758621'),
+    cantidad: 8700,
+    zona_id: 'EPA-04-012-8000',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('4.420160919540229885057471264367816'),
+    cantidad: 8700,
+    zona_id: 'EPA-04-012-8000',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('34.63436649710162072636933633029694'),
+    cantidad: 8453,
+    zona_id: 'EPA-04-013-0019',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('10.96295113004378180097029937285528'),
+    cantidad: 8451,
+    zona_id: 'EPA-04-013-0019',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('22.89028821199289714519874334107362'),
+    cantidad: 7321,
+    zona_id: 'EPA-04-013-1003',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('7.074780976220275344180225281602003'),
+    cantidad: 7990,
+    zona_id: 'EPA-04-013-1003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('22.05796649335644136337377238590410'),
+    cantidad: 8655,
+    zona_id: 'EPA-04-013-1004',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('7.279930675909878682842287694974003'),
+    cantidad: 8655,
+    zona_id: 'EPA-04-013-1004',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('22.11097070649052268811028144744400'),
+    cantidad: 8705,
+    zona_id: 'EPA-04-013-2001',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('6.804721966911764705882352941176471'),
+    cantidad: 8704,
+    zona_id: 'EPA-04-013-2001',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('31.25221674876847290640394088669951'),
+    cantidad: 203,
+    zona_id: 'EPA-04-013-2601',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('13.67241379310344827586206896551724'),
+    cantidad: 203,
+    zona_id: 'EPA-04-013-2601',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('37.60011487650775416427340608845491'),
+    cantidad: 8705,
+    zona_id: 'EPA-04-013-3002',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('31.83839080459770114942528735632184'),
+    cantidad: 8700,
+    zona_id: 'EPA-04-013-3003',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('34.14436999080278544212324267507555'),
+    cantidad: 7611,
+    zona_id: 'EPA-04-013-4003',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('8.997832085139929050059124950729208'),
+    cantidad: 7611,
+    zona_id: 'EPA-04-013-4003',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('34.44894446994033960532354290959156'),
+    cantidad: 8716,
+    zona_id: 'EPA-04-013-4004',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('24.73168180250603517645706403034832'),
+    cantidad: 8699,
+    zona_id: 'EPA-04-013-4005',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('6.970352914128060696631796758248074'),
+    cantidad: 8699,
+    zona_id: 'EPA-04-013-4005',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('41.39420654911838790931989924433249'),
+    cantidad: 8734,
+    zona_id: 'EPA-04-013-4006',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('66.47215585370336335232494026833303'),
+    cantidad: 5441,
+    zona_id: 'EPA-04-013-4009',
+    variable: 'pm10',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('7.886331789573684835530222063887899'),
+    cantidad: 8421,
+    zona_id: 'EPA-04-013-4021',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('10.75093582887700534759358288770053'),
+    cantidad: 8228,
+    zona_id: 'EPA-04-013-9812',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('9.422350784740520105395807079848780'),
+    cantidad: 8729,
+    zona_id: 'EPA-04-013-9997',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('6.441200828157349896480331262939959'),
+    cantidad: 966,
+    zona_id: 'EPA-04-015-1000',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  },
+  {
+    promedio: Decimal128('7.396805111821086261980830670926518'),
+    cantidad: 4695,
+    zona_id: 'EPA-04-019-0011',
+    variable: 'pm25',
+    unidad: 'µg/m³'
+  }
+]

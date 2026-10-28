@@ -1,5 +1,5 @@
 // Q08: cantidad de incidentes registrados por categoria.
-const base = db.getSiblingDB("smartcity");
+const base = db;
 
 const resultados = base.incidentes.aggregate([
   {
