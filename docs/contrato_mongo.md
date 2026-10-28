@@ -6,8 +6,9 @@ Este documento define la estructura inicial que deben conservar las cargas
 para funcionar con las consultas Q01-Q10 del sprint 1.
 
 Javier implementó consultas, agregaciones, índices y pruebas.
-Edward completará el modelo documental, validadores, fuentes, carga masiva,
-operaciones CRUD y generación de eventos y alertas.
+Edward incorporó el modelo documental, validadores, fuentes, carga masiva,
+operaciones CRUD y generación de eventos y alertas de demostración.
+La validación de consultas no acredita por sí sola todos estos módulos.
 Los cambios de nombres, tipos o significado de campos deben coordinarse
 antes de modificar la carga o las consultas.
 
@@ -91,7 +92,7 @@ Q04 recupera eventos ya clasificados; no los genera.
 | Campo | Tipo | Uso |
 |---|---|---|
 | `_id` | Identificador BSON | Identifica la alerta |
-| `evento_id` | Mismo tipo que `eventos._id` | Referencia al evento asociado |
+| `evento_id` | Mismo tipo que `eventos._id` | Referencia opcional al evento asociado |
 | `sensor_id` | Cadena | Sensor asociado |
 | `zona_id` | Cadena | Zona asociada; agrupación de Q05 |
 | `variable` | Cadena | Magnitud que originó la alerta |
@@ -104,8 +105,9 @@ Q04 recupera eventos ya clasificados; no los genera.
 | `sintetico` | Booleano | Indica si es un dato generado |
 
 La muestra usa estado `pendiente` y umbral 40 para pm25.
-Ese umbral es ficticio y no normativo. Las alertas están precargadas;
-todavía debe definirse su mecanismo de generación.
+Ese umbral es ficticio y no normativo. El módulo integrado incluye
+`mongo/04_generar_demostraciones.js` para generar eventos, alertas e
+incidentes de demostración.
 
 ## incidentes
 
@@ -158,18 +160,18 @@ Los promedios ponderan cada lectura por igual. Q09 no completa días sin datos.
 Los parámetros de sensor, fechas y categorías de ejemplo deben ajustarse
 para consultar la carga definitiva.
 
-## Comprobación para integrar la carga de Edward
+## Comprobaciones de integración
 
-1. Completar y justificar el modelo y sus validadores respetando este contrato.
-2. Adaptar las fuentes acordadas y documentar procedencia y generación sintética.
-3. Implementar una carga reproducible sin duplicados que alcance al menos
-   500.000 documentos según los requisitos de la entrega.
-4. Implementar y demostrar las operaciones CRUD y definir la generación
-   de eventos y alertas.
-5. Comprobar tipos, unidades y referencias, incluidos los identificadores
-   compartidos con PostgreSQL.
-6. Ejecutar Q01-Q10 con parámetros adecuados para las fuentes finales,
-   revisar resultados y volver a evaluar los planes e índices.
+Los módulos de modelo, validadores, carga, CRUD y generación de datos
+de demostración de Edward están incluidos en la rama de integración.
+Para evaluar el conjunto corresponde comprobar:
+
+1. Correspondencia del modelo y validadores con este contrato.
+2. Procedencia de las fuentes y distinción de datos reales y simulados.
+3. Reproducibilidad de la carga y control de duplicados.
+4. Operaciones CRUD y generación de eventos, alertas e incidentes.
+5. Tipos, unidades y referencias compartidas con PostgreSQL.
+6. Resultados de Q01-Q10 y planes de acceso con los datos integrados.
 
 Se ejecutaron Q01-Q10 sobre el respaldo de Edward restaurado en
 `smartcity_integracion`: 500.000 lecturas, 10 eventos, 10 alertas y
