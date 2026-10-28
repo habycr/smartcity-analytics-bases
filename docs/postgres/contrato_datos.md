@@ -1,6 +1,7 @@
 # SmartCity Analytics — Contrato de datos PostgreSQL ↔ MongoDB
 
-**Estado:** propuesta de integración basada en el esquema PostgreSQL y el ETL EPA AQS implementados. **Pendiente de confirmación por Edward y Javier** para los nombres definitivos de colecciones, validadores e índices de MongoDB.  
+**Estado:** implementación integrada en development. Se verificaron las consultas MongoDB y la conciliación contra el catálogo exportado de PostgreSQL en Ubuntu. No implica aprobación formal de todo el equipo.
+
 **Alcance:** datos EPA AQS 2025 de calidad del aire (PM2.5 y PM10). Los identificadores `DEMO-` corresponden a ejemplos sintéticos.
 
 ## 1. Propósito y fuentes de verdad
@@ -14,7 +15,7 @@
 
 Los componentes de EPA se toman **como texto**, conservando los ceros iniciales y el valor original del CSV.
 
-| Concepto | PostgreSQL | MongoDB (campo propuesto) | Regla |
+| Concepto | PostgreSQL | MongoDB | Regla |
 |---|---|---|---|
 | Estación / ubicación EPA | `ubicacion.id_ubicacion` (`VARCHAR(64)`) | `zona_id` (`string`) | `EPA-{State Code}-{County Code}-{Site Number}` |
 | Monitor / sensor EPA | `sensor.id_sensor` (`VARCHAR(64)`) | `sensor_id` (`string`) | `{zona_id}-{Parameter Code}-{POC}` |
@@ -35,11 +36,11 @@ sensor_id = EPA-01-003-0010-88101-3
 2. `zona_id` coincide con `ubicacion.id_ubicacion` y con la ubicación asignada al sensor en PostgreSQL.
 3. Un sensor EPA tiene una sola `zona_id` en el catálogo actual. No se infiere una ubicación distinta a partir de las coordenadas de una lectura.
 4. No se reutiliza `sensor_id` para otros parámetros o POC; el código del parámetro y POC son parte de la identidad.
-5. Los identificadores sintéticos de prueba mantienen el prefijo `DEMO-`; se identifican además mediante el campo documental `sintetico` (propuesto). **No se deduce que todos los ID fuera de `DEMO-` sean EPA** si se añade otra fuente.
+5. Los identificadores sintéticos de prueba mantienen el prefijo `DEMO-`; se identifican además mediante el campo documental `sintetico`. **No se deduce que todos los ID fuera de `DEMO-` sean EPA** si se añade otra fuente.
 
-## 3. Contrato propuesto para documentos de lecturas
+## 3. Contrato implementado para documentos de lecturas
 
-**Colección propuesta:** `lecturas` (nombre definitivo sujeto a confirmación por el equipo MongoDB).
+**Colección implementada:** `lecturas`.
 
 | Campo | Tipo BSON | Obligatorio para EPA | Regla |
 |---|---|---|---|
@@ -54,7 +55,7 @@ sensor_id = EPA-01-003-0010-88101-3
 | `fuente` | `string` | Sí | `EPA AQS hourly 2025` |
 | `sintetico` | `bool` | Sí | `false` para EPA; `true` para datos DEMO |
 
-Los nombres anteriores reflejan el intercambio propuesto; **no implican que los validadores de MongoDB ya estén implementados**. Si el equipo define `timestamp` en lugar de `fecha_utc`, debe acordarlo y documentarlo en ambos cargadores antes de integrar.
+El campo temporal implementado es `fecha_utc`, de tipo BSON Date. Los validadores están en `mongo/01_colecciones.js`. Se comprobó el rechazo de lecturas sin sensor_id y con fecha_utc como texto, ambas con código de validación 121.
 
 **Ejemplo JSON extendido ilustrativo** (el valor es solo un ejemplo, no una lectura EPA verificada):
 
@@ -72,7 +73,7 @@ Los nombres anteriores reflejan el intercambio propuesto; **no implican que los 
 }
 ```
 
-En MongoDB se permiten **muchas lecturas para el mismo `sensor_id`**. Por ello, **no crear un índice único sobre `sensor_id` solamente**. Un índice de consulta recomendado es `{ sensor_id: 1, fecha_utc: -1 }`; la política de unicidad de lecturas debe considerar además el origen, la variable y posibles revisiones de datos, y acordarse antes de imponer restricciones.
+En MongoDB se permiten **muchas lecturas para el mismo `sensor_id`**. Por ello, **no crear un índice único sobre `sensor_id` solamente**. El índice implementado para Q01 es `{ sensor_id: 1, fecha_utc: 1, _id: 1 }`; la política de unicidad de lecturas debe considerar además el origen, la variable y posibles revisiones de datos, y acordarse antes de imponer restricciones.
 
 ## 4. Fechas y zonas horarias
 
@@ -130,9 +131,28 @@ WHERE s.id_sensor IS NULL;
 -- 0
 ```
 
-**Conciliación PostgreSQL ↔ MongoDB (por implementar):** exportar un conjunto pequeño de `sensor.id_sensor` y `sensor.id_ubicacion`, compararlo con los distintos `sensor_id` y `zona_id` de MongoDB, y verificar que no existan documentos con sensores desconocidos o ubicaciones discordantes. Comparar asimismo los nombres de variables, las unidades y los instantes UTC. No asumir que los conteos de mediciones entre motores deben ser idénticos: pueden cumplir cargas y coberturas diferentes.
+**Conciliación ejecutada en Ubuntu:** se utilizó
+`mongo/conciliar_catalogo.py` sobre `smartcity_integracion`, con una copia
+de `postgres/datos_muestra/sensor.csv` exportada de PostgreSQL.
 
-## 9. Responsabilidades y aprobación pendiente
+| Indicador | Resultado |
+|---|---:|
+| Lecturas revisadas | 500.000 |
+| Grupos sensor/zona/variable/unidad/tipo | 63 |
+| Errores | 0 |
+
+Se comprobó la correspondencia sensor/zona con el catálogo y el tipo y
+unidad de las variables EPA. La prueba no consulta PostgreSQL en vivo
+ni compara individualmente las mediciones entre motores.
+
+Evidencias:
+- `mongo/pruebas/evidencias/integracion/conciliacion_catalogo.txt`
+- `mongo/pruebas/evidencias/integracion/catalogo_commit.txt`
+- `mongo/pruebas/evidencias/integracion/catalogo_sha256.txt`
+
+Los motores pueden tener selecciones de observaciones diferentes.
+
+## 9. Responsabilidades y decisiones pendientes
 
 | Responsable | Validación solicitada |
 |---|---|
@@ -141,7 +161,16 @@ WHERE s.id_sensor IS NULL;
 | Edward — MongoDB | Aprobar colección/campos, validador JSON Schema, tipo numérico y carga documental |
 | Javier — MongoDB | Revisar índices, consultas, claves de búsqueda y estrategia de conciliación |
 
-**Pendiente de acuerdo conjunto:** nombre final de la colección y del campo temporal en MongoDB; política de duplicados/versiones documentales; conservación de calificadores y condiciones de referencia; integración de la segunda fuente de datos. No se debe marcar este contrato como aprobado por todo el equipo hasta recibir esa confirmación.
+**Implementado:** colección `lecturas`, campo `fecha_utc`,
+identificadores EPA compartidos y conciliación del catálogo.
+Los valores EPA en MongoDB se almacenan como Decimal128.
+
+**Decisiones pendientes:** tratamiento analítico de negativos y
+calificadores, condiciones de referencia, revisiones de observaciones
+e integración de la segunda fuente.
+
+Las pruebas y sus límites están documentados en
+`docs/registro_evidencia.md` y `docs/mongodb_consultas_rendimiento.md`.
 
 ## 10. Evidencias relacionadas
 
