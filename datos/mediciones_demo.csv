@@ -1,0 +1,4 @@
+sensor_id,zona_id,tipo_sensor,variable,valor,unidad,fecha_utc,fuente,sintetico
+DEMO-S001,DEMO-Z001,particulas,pm25,10.2,µg/m³,2025-03-01T12:00:00Z,DEMO archivo sintético,true
+DEMO-S001,DEMO-Z001,particulas,pm25,12.8,µg/m³,2025-03-02T12:00:00Z,DEMO archivo sintético,true
+DEMO-S002,DEMO-Z002,particulas,pm10,16.4,µg/m³,2025-03-01T12:00:00Z,DEMO archivo sintético,true
