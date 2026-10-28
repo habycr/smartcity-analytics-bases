@@ -34,3 +34,39 @@ Los eventos, alertas e incidentes incorporados son simulaciones utilizadas para 
 ## Alcance de estas pruebas
 
 Este registro corresponde al módulo de modelo e ingestión MongoDB. La ejecución de las diez consultas analíticas y la evaluación de índices pertenecen al módulo de consultas del equipo. Los cuatro archivos originales utilizados para mediciones provienen de una sola fuente, EPA AQS.
+## Verificación de integración en Ubuntu — Javier, 28 de octubre de 2026
+
+Se ejecutaron los módulos de Edward desde la rama de integración.
+
+| Comprobación | Resultado |
+|---|---|
+| Colecciones en smartcity_demo | Cuatro colecciones creadas con validadores |
+| Validadores | Sin sensor_id y fecha_utc como texto rechazados con código 121 |
+| Documento válido | Aceptado y eliminado al finalizar la prueba |
+| CRUD | Inserciones, lecturas, actualizaciones y eliminación verificadas |
+| Limpieza CRUD | Cero documentos DEMO-CRUD restantes |
+| Generador en smartcity_integracion | Dos ejecuciones con documentos finales idénticos |
+| Conteos posteriores | 500.000 lecturas, 10 eventos, 10 alertas y 3 incidentes |
+| Conciliación del catálogo | 500.000 lecturas, 63 grupos, cero errores |
+
+El catálogo utilizado es una copia de
+postgres/datos_muestra/sensor.csv de feature/sprint1-postgres-modelo,
+exportado previamente desde PostgreSQL. El conciliador comprobó los
+pares sensor/zona y el tipo y unidad de las variables EPA.
+
+Esta conciliación no compara las mediciones una a una ni consulta una
+instancia PostgreSQL en vivo.
+
+Se ajustó la prueba de validadores para exigir el código 121.
+El generador utiliza ahora la base seleccionada en la URI de mongosh.
+
+Las evidencias están en mongo/pruebas/evidencias/integracion/.
+La revisión de consultas e índices se describe en
+docs/mongodb_consultas_rendimiento.md.
+
+### Alcance pendiente
+
+- Ejecutar la integración en Windows.
+- Verificar la recarga del ETL con los archivos originales para acreditar
+  su control de duplicados; repetir el generador no prueba el ETL.
+- Definir la política de calidad para valores negativos y calificadores EPA.

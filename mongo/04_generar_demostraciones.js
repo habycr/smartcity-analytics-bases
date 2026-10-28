@@ -1,8 +1,8 @@
 // SmartCity Analytics / Edward - eventos, alertas e incidentes demostrativos.
 // Este script NO crea eventos/alertas/incidentes reales de EPA.
-// Se ejecuta sobre la base smartcity, sin modificar las 500 000 lecturas.
+// Usa la base indicada en la URI, sin modificar las lecturas.
 // Es idempotente: cada documento de DEMO usa un _id estable.
-const base = db.getSiblingDB('smartcity');
+const base = db;
 const FUENTE = 'DEMO - reglas ilustrativas sobre EPA AQS 2025';
 const campos = {
   _id: 1, sensor_id: 1, zona_id: 1, fecha_utc: 1,
@@ -15,7 +15,7 @@ const configuracion = [
 
 if (!base.getCollectionNames().includes('lecturas') ||
     base.lecturas.countDocuments({ sintetico: false }) === 0) {
-  throw new Error('No hay lecturas EPA reales en la base smartcity.');
+  throw new Error('No hay lecturas EPA reales en la base seleccionada.');
 }
 for (const nombre of ['eventos','alertas','incidentes']) {
   if (!base.getCollectionNames().includes(nombre)) {

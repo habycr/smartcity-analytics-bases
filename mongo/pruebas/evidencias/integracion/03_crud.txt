@@ -1,0 +1,122 @@
+1. insertOne
+{
+  acknowledged: true,
+  insertedId: 'DEMO-CRUD-001'
+}
+2. insertMany
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': 'DEMO-CRUD-002',
+    '1': 'DEMO-CRUD-003'
+  }
+}
+3. find: todos los documentos del CRUD
+[
+  {
+    _id: 'DEMO-CRUD-001',
+    sensor_id: 'DEMO-S001',
+    zona_id: 'DEMO-Z001',
+    tipo_sensor: 'particulas',
+    variable: 'pm25',
+    unidad: 'µg/m³',
+    fuente: 'DEMO CRUD',
+    sintetico: true,
+    valor: 10,
+    fecha_utc: ISODate('2025-02-01T00:00:00.000Z')
+  },
+  {
+    _id: 'DEMO-CRUD-002',
+    sensor_id: 'DEMO-S001',
+    zona_id: 'DEMO-Z001',
+    tipo_sensor: 'particulas',
+    variable: 'pm25',
+    unidad: 'µg/m³',
+    fuente: 'DEMO CRUD',
+    sintetico: true,
+    valor: 11,
+    fecha_utc: ISODate('2025-02-02T00:00:00.000Z')
+  },
+  {
+    _id: 'DEMO-CRUD-003',
+    sensor_id: 'DEMO-S001',
+    zona_id: 'DEMO-Z001',
+    tipo_sensor: 'particulas',
+    variable: 'pm25',
+    unidad: 'µg/m³',
+    fuente: 'DEMO CRUD',
+    sintetico: true,
+    valor: 12,
+    fecha_utc: ISODate('2025-02-03T00:00:00.000Z')
+  }
+]
+4. findOne
+{
+  _id: 'DEMO-CRUD-001',
+  sensor_id: 'DEMO-S001',
+  zona_id: 'DEMO-Z001',
+  tipo_sensor: 'particulas',
+  variable: 'pm25',
+  unidad: 'µg/m³',
+  fuente: 'DEMO CRUD',
+  sintetico: true,
+  valor: 10,
+  fecha_utc: ISODate('2025-02-01T00:00:00.000Z')
+}
+5. updateOne
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+6. updateMany
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0
+}
+7. deleteOne
+{
+  acknowledged: true,
+  deletedCount: 1
+}
+Resultados posteriores:
+[
+  {
+    _id: 'DEMO-CRUD-001',
+    sensor_id: 'DEMO-S001',
+    zona_id: 'DEMO-Z001',
+    tipo_sensor: 'particulas',
+    variable: 'pm25',
+    unidad: 'µg/m³',
+    fuente: 'DEMO CRUD',
+    sintetico: true,
+    valor: 25,
+    fecha_utc: ISODate('2025-02-01T00:00:00.000Z')
+  },
+  {
+    _id: 'DEMO-CRUD-002',
+    sensor_id: 'DEMO-S001',
+    zona_id: 'DEMO-Z001',
+    tipo_sensor: 'particulas',
+    variable: 'pm25',
+    unidad: 'µg/m³',
+    fuente: 'DEMO CRUD',
+    sintetico: true,
+    valor: 11,
+    fecha_utc: ISODate('2025-02-02T00:00:00.000Z'),
+    metadata: {
+      revisado: true
+    }
+  }
+]
+Limpieza de demostracion:
+{
+  acknowledged: true,
+  deletedCount: 2
+}
+Total restante DEMO-CRUD: 0

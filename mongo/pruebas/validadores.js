@@ -8,7 +8,11 @@ for (const [etiqueta,doc] of [
  ['sin sensor_id',(()=>{const d={...valido,_id:'DEMO-VALID-002'};delete d.sensor_id;return d})()],
  ['fecha_utc string',{...valido,_id:'DEMO-VALID-003',fecha_utc:'2025-01-01T00:00:00Z'}]
 ]) {
- try {base.lecturas.insertOne(doc);print('ERROR: aceptado '+etiqueta);} catch(e) {rechazos++;print('CORRECTO: rechazado '+etiqueta);}
+ try {base.lecturas.insertOne(doc);print('ERROR: aceptado '+etiqueta);} catch(e) {
+  if (e.code !== 121) throw e;
+  rechazos++;
+  print('CORRECTO: rechazado '+etiqueta+' (codigo 121)');
+}
  base.lecturas.deleteOne({_id:doc._id});
 }
 try {base.lecturas.replaceOne({_id:valido._id},valido,{upsert:true});print('CORRECTO: lectura valida aceptada');}

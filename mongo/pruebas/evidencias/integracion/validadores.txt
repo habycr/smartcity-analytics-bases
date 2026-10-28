@@ -1,0 +1,4 @@
+CORRECTO: rechazado sin sensor_id (codigo 121)
+CORRECTO: rechazado fecha_utc string (codigo 121)
+CORRECTO: lectura valida aceptada
+OK: 2/2 validaciones negativas
