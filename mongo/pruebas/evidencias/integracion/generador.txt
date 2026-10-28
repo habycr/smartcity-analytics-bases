@@ -1,0 +1,19 @@
+Lecturas EPA intactas: 500000
+Eventos DEMO usados en esta ejecucion: 10
+Alertas DEMO usadas en esta ejecucion: 10
+Incidentes DEMO creados/actualizados: 3
+Conteos de las colecciones:
+  lecturas: 500000
+  eventos: 10
+  alertas: 10
+  incidentes: 3
+Lecturas EPA intactas: 500000
+Eventos DEMO usados en esta ejecucion: 10
+Alertas DEMO usadas en esta ejecucion: 10
+Incidentes DEMO creados/actualizados: 3
+Conteos de las colecciones:
+  lecturas: 500000
+  eventos: 10
+  alertas: 10
+  incidentes: 3
+PASS: generación repetible, documentos idénticos y conteos correctos.

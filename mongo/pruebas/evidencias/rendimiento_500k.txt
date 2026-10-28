@@ -1,0 +1,102 @@
+Generando 500000 lecturas sinteticas...
+Cargados: 100000
+Cargados: 200000
+Cargados: 300000
+Cargados: 400000
+Cargados: 500000
+[PASS] Ambas estrategias devuelven los mismos 500 documentos
+{
+  fechaEjecucion: ISODate('2026-10-24T06:55:21.144Z'),
+  versionMongoDB: '8.0.34',
+  base: 'smartcity_rendimiento',
+  coleccion: 'lecturas_benchmark_v1',
+  documentos: 500000,
+  sensores: 1000,
+  documentosPorSensor: 500,
+  filtro: {
+    sensor_id: 'S0001'
+  },
+  orden: {
+    fecha: 1,
+    _id: 1
+  },
+  repeticiones: 5,
+  recorridoCompleto: {
+    ejecuciones: [
+      {
+        resultados: 500,
+        documentosExaminados: 500000,
+        clavesExaminadas: 0,
+        tiempoMs: 196
+      },
+      {
+        resultados: 500,
+        documentosExaminados: 500000,
+        clavesExaminadas: 0,
+        tiempoMs: 202
+      },
+      {
+        resultados: 500,
+        documentosExaminados: 500000,
+        clavesExaminadas: 0,
+        tiempoMs: 208
+      },
+      {
+        resultados: 500,
+        documentosExaminados: 500000,
+        clavesExaminadas: 0,
+        tiempoMs: 208
+      },
+      {
+        resultados: 500,
+        documentosExaminados: 500000,
+        clavesExaminadas: 0,
+        tiempoMs: 215
+      }
+    ],
+    medianaTiempoMs: 208
+  },
+  conIndice: {
+    ejecuciones: [
+      {
+        resultados: 500,
+        documentosExaminados: 500,
+        clavesExaminadas: 500,
+        tiempoMs: 1
+      },
+      {
+        resultados: 500,
+        documentosExaminados: 500,
+        clavesExaminadas: 500,
+        tiempoMs: 1
+      },
+      {
+        resultados: 500,
+        documentosExaminados: 500,
+        clavesExaminadas: 500,
+        tiempoMs: 1
+      },
+      {
+        resultados: 500,
+        documentosExaminados: 500,
+        clavesExaminadas: 500,
+        tiempoMs: 2
+      },
+      {
+        resultados: 500,
+        documentosExaminados: 500,
+        clavesExaminadas: 500,
+        tiempoMs: 1
+      }
+    ],
+    medianaTiempoMs: 1
+  },
+  limites: [
+    'Datos sinteticos de distribucion uniforme.',
+    'Ejecucion local con calentamiento; no mide cache fria.',
+    'hint fuerza cada estrategia; no evalua la eleccion automatica.',
+    'Los tiempos dependen del equipo y su carga.',
+    'No mide el costo de mantener indices durante escrituras.',
+    'No sustituye la validacion con las fuentes finales.'
+  ]
+}

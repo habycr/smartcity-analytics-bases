@@ -1,0 +1,5 @@
+Creada: lecturas
+Creada: eventos
+Creada: alertas
+Creada: incidentes
+Base: smartcity_demo; colecciones: lecturas, incidentes, eventos, alertas

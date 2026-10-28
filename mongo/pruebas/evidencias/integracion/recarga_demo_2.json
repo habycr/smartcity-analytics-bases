@@ -1,0 +1,20 @@
+{
+  "archivos": [
+    "datos/mediciones_demo.csv"
+  ],
+  "base": "smartcity_prueba_carga",
+  "filas_leidas": 3,
+  "filas_validas": 3,
+  "omitidas_sin_catalogo": 0,
+  "omitidas_otros_parametros": 0,
+  "filas_invalidas": 0,
+  "errores_muestra": [],
+  "insertadas": 0,
+  "ya_existentes": 3,
+  "sinteticas_insertadas": 0,
+  "semilla": 3101,
+  "lecturas_finales": 3,
+  "lecturas_reales_finales": 0,
+  "lecturas_sinteticas_finales": 3,
+  "tamano_bytes_bson_documentos": 789
+}

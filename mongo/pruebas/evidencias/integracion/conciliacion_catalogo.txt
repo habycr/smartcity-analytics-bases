@@ -1,0 +1,7 @@
+{
+  "base": "smartcity_integracion",
+  "documentos_revisados": 500000,
+  "grupos": 63,
+  "errores": 0,
+  "ejemplos": []
+}

@@ -1,0 +1,3 @@
+PASS: 499602 lecturas en 2025 UTC y 398 en enero de 2026 UTC
+PASS: El inicio se incluye y el final se excluye
+PASS: El intervalo sin datos devuelve cero
