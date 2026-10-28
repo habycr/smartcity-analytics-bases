@@ -1,0 +1,36 @@
+{
+  "origen": "EPA AQS, archivos horarios 2025",
+  "limite_por_archivo": 250000,
+  "modo_muestreo": "distribuida",
+  "filas_disponibles_por_archivo": {
+    "hourly_88101_2025.zip": 8367660,
+    "hourly_81102_2025.zip": 3949057
+  },
+  "politica": {
+    "identificador_medicion": "BIGINT negativo BLAKE2b(sensor,parametro,UTC)",
+    "fecha_instalacion": "NULL (desconocida)",
+    "estado": "activo si Last Sample Date >= 2025-10-01; no estado físico",
+    "organismo": "Collecting > Reporting > Owning; rol puede variar",
+    "mediciones_negativas": "conservadas sin alteración",
+    "calificadores": "conservados solo en ZIP original; no filtrados",
+    "unidades_origen": {
+      "88101": "Micrograms/cubic meter (LC)",
+      "81102": "Micrograms/cubic meter (25 C)"
+    },
+    "unidad_canonica_en_bd": "µg/m³",
+    "muestreo": "N posiciones equiespaciadas por índice en todo el archivo; determinista, no aleatorio ni estratificado; la distribución depende del orden del CSV"
+  },
+  "conteos": {
+    "con_calificador_conservados": 40970,
+    "estaciones_no_en_catalogo": 0,
+    "filas_intentadas": 500000,
+    "filas_seleccionadas_81102": 250000,
+    "filas_seleccionadas_88101": 250000,
+    "mediciones_insertadas": 490000,
+    "monitores_no_en_catalogo": 0,
+    "negativos_conservados": 7521,
+    "sensores_insertados": 11,
+    "ubicaciones_insertadas": 3
+  },
+  "resultado": "COMMIT correcto"
+}

@@ -1,0 +1,23 @@
+{
+  "origen": "PostgreSQL local, registros EPA AQS 2025 existentes",
+  "seleccion": "orden por número de lectura dentro de cada sensor; desempate determinista",
+  "max_mediciones": 3000,
+  "conteos": {
+    "categoria_sensor": 1,
+    "tipo_sensor": 1,
+    "organismo_responsable": 176,
+    "ubicacion": 1094,
+    "variable_medicion": 2,
+    "sensor": 1528,
+    "medicion": 3000
+  },
+  "sha256": {
+    "categoria_sensor.csv": "1f506d58031df87b818464cdc5ac89d4e11ec05add3522aad9b443ee18f9465e",
+    "tipo_sensor.csv": "54ad7e7b3450c1d59033ecc89ecb550843bd97dd1bfd5182ab245608f3c1ce0f",
+    "organismo_responsable.csv": "2a569016322ec9cdec211b87ebf9bc662eb5876d6f9577d1e1d720fca17d2e9d",
+    "ubicacion.csv": "411a439519cc4d629902c5bd9c9717814c3b91a5b0012b39676ecec53ca61654",
+    "variable_medicion.csv": "5b2daa36c07d1b90b455987221ad9c5f220278cbf24228675cc665966940b506",
+    "sensor.csv": "0038881ba6d297fb1bf358cfcef74f3ee9d8eb99c2f3098351b05265cd9e7d8f",
+    "medicion.csv": "919fafd48647e51b8f1cfdfbcb4862b112a1eb4ace43859490de7b0136fb5d57"
+  }
+}
