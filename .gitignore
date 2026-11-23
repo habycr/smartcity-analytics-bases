@@ -34,3 +34,11 @@ venv/
 /mongo/backups/
 /mongo/db/
 /datos/reales/
+
+# Entorno y salidas locales Spark (sprint 2)
+/.venv-spark/
+/spark/salidas/
+/spark-warehouse/
+/artifacts/
+/metastore_db/
+/derby.log
