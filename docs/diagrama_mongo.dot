@@ -1,0 +1,14 @@
+digraph MongoDocumental {
+ graph [rankdir=LR, bgcolor="white", pad=0.3, nodesep=0.5, ranksep=1.0, fontname="DejaVu Sans"];
+ node [shape=record, style="rounded,filled", fillcolor="#EDF5F1", color="#287E61", fontname="DejaVu Sans", fontsize=11, margin=0.18];
+ edge [fontname="DejaVu Sans", fontsize=9, color="#476B60"];
+ pg [label="{PostgreSQL (catalogos)|sensor\nubicacion\nvariable_medicion}", fillcolor="#EDF3FF", color="#4169A8"];
+ l [label="{lecturas|sensor_id / zona_id\nvariable / valor / unidad\nfecha_utc / fuente / sintetico\nmetadata / calidad / procedencia}"];
+ e [label="{eventos|lectura_id (opcional)\nseveridad / categoria\nfecha_utc / detalle}"];
+ a [label="{alertas|evento_id (opcional)\nvariable / valor / umbral\nestado / fecha_utc}"];
+ i [label="{incidentes|zona_id / categoria\ndescripcion / fecha_utc\ndetalle}"];
+ pg -> l [label="IDs compartidos\nvalidación ETL", style=dashed];
+ l -> e [label="lectura_id", style=dashed];
+ e -> a [label="evento_id", style=dashed];
+ pg -> i [label="zona_id", style=dashed];
+}

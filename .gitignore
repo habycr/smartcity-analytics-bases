@@ -33,3 +33,4 @@ venv/
 /mongo/datos/
 /mongo/backups/
 /mongo/db/
+/datos/reales/

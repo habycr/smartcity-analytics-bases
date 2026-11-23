@@ -1,0 +1,20 @@
+{
+  "archivos": [
+    "datos/reales/hourly_81102_2025.zip"
+  ],
+  "base": "smartcity",
+  "filas_leidas": 250000,
+  "filas_validas": 250000,
+  "omitidas_sin_catalogo": 0,
+  "omitidas_otros_parametros": 0,
+  "filas_invalidas": 0,
+  "errores_muestra": [],
+  "insertadas": 249000,
+  "ya_existentes": 1000,
+  "sinteticas_insertadas": 0,
+  "semilla": 3101,
+  "lecturas_finales": 500000,
+  "lecturas_reales_finales": 500000,
+  "lecturas_sinteticas_finales": 0,
+  "tamano_bytes_bson_documentos": 192946993
+}
